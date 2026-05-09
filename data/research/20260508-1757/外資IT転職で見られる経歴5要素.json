@@ -1,0 +1,211 @@
+{
+  "run_id": "20260508-1757",
+  "title": "外資IT転職で見られる経歴5要素",
+  "slug": "外資IT転職で見られる経歴5要素",
+  "collected_at": "2026-05-08T17:57:00+09:00",
+  "category": "転職市場",
+  "angle": "チェックリスト",
+  "why_now": "30代年収分岐期に外資/自社プロダクト転職が有効と確認",
+  "sources": [
+    {
+      "url": "https://sincereed-agent.com/column/foreign-owned-itcompany_tensyoku/",
+      "domain": "sincereed-agent.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "外資IT中途採用で重視される要素は『ビジネス英語力（TOEIC700点以上が目安、エンジニア・営業・マネジメント職は700〜800点以上）』『職種別ITスキル（AWS/Azure/GCP等のクラウド、Java/Python等の開発、サイバーセキュリティ、DevOps）』『自走力・論理的思考・プレゼン力』『グローバル環境への適応力とスピード感』の4軸",
+        "評価は実績ベース：『前年比120%の売上達成』『プロジェクトリーダーとしてXXを推進』など数値化された成果が必須",
+        "選考でコーディングテスト（エンジニア職）やケーススタディが課されるケースあり",
+        "2025年6月時点でGoogle・日本マイクロソフト・SAP・セールスフォース・ジャパンの求人要件を参照"
+      ]
+    },
+    {
+      "url": "https://www.movin.co.jp/it/special/special105.html",
+      "domain": "movin.co.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "外資IT企業で評価される4要素：（1）高い専門性（IT技術力または業務理解、テクノロジー×業務知識のバイリンガル人材）、（2）論理的コミュニケーション力・自走力、（3）英語力、（4）キャリア背景",
+        "英語使用パターンは3層：『日本法人完結型（英語不要〜読み書きOK）』『海外チーム協業（TOEIC800相当）』『外資本社直属（実務英語必須）』",
+        "評価される出身元：日系大手SIer（NTTデータ・NEC・富士通）、ITコンサル/戦略ファーム（アクセンチュア・デロイト・ベイカレント）、SaaS系ベンチャー営業/導入経験者、グローバルPJ経験者"
+      ]
+    },
+    {
+      "url": "https://mynavi-agent.jp/knowledge/common/529.html",
+      "domain": "mynavi-agent.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "外資系IT企業に向いている人の特徴は『発言力』『コミュニケーション能力（マネージャー級ならTOEIC700点以上目安）』『対応力』",
+        "20代・30代での転職が有利（理由：ハードワーク耐性、最新技術の吸収力）",
+        "実務経験・専門性のアピールが採用の鍵で、LPICやシスコ技術者認定など国際的な資格は最上位/2番目を取得すると有利"
+      ]
+    },
+    {
+      "url": "https://plus.onecareer.jp/articles/999",
+      "domain": "plus.onecareer.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "外資IT各社で英語の必要レベルは異なる：日本マイクロソフト『開発職以外は採用必須ではないが本社/他国連携で相応のレベル必要』、Amazon Japan『L6以上で重要、Amazonロジスティクス部門は外国人が半数以上で英語必須』、日本オラクル『メンバー層は重視されず、マネージャー以上で要求』",
+        "問題解決力とリーダーシップが重視される。日系大手SIer→AWS転職者の事例『開発現場でのチームリーディング・マネジメント経験が評価された』",
+        "Amazonでは『Our Leadership Principles（OLP）』が評価の根幹、特にOwnership（当事者意識・主体的行動）を重視",
+        "向いている人の特徴：自主性・主体性、変化を楽しめる、学習意欲の高さ、自己成長意欲"
+      ]
+    },
+    {
+      "url": "https://www.enworld.com/candidates/career-advices/foreign-job-change/language/toeic-score.html",
+      "domain": "enworld.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "外資転職のTOEICスコア目安：700点（最低限取得しておきたい点数、書類選考で不採用になりにくい）、800点（英語職種が狙える）、900点（強力な武器）",
+        "TOEIC L&Rで895点以上の取得者は全体の4.4%（出典：TOEIC Program DATA＆ANALYSIS 2024 / 一般財団法人国際ビジネスコミュニケーション協会）",
+        "業界別目安：金融800〜900点、コンサル800〜900点、商社800〜900点、メーカー700〜850点"
+      ]
+    },
+    {
+      "url": "https://www.lhh.com/ja-jp/insights/career-gaishikei-english-skill",
+      "domain": "lhh.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "IT業界では一般的にTOEIC800点以上が目安。海外チームとの協働、英語技術文書作成にはこのレベルが不可欠",
+        "IT業界は新技術・トレンドが英語で発信されるためリサーチ能力・読解力が重要。エンジニアは技術文書理解力が特に求められる",
+        "日本市場向け業務やローカルプロジェクト中心のポジションでは英語力がそれほど重視されないケースもある"
+      ]
+    },
+    {
+      "url": "https://www.enworld.com/candidates/career-advices/useful-column/industry/it/gaishi-IT.html",
+      "domain": "enworld.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "外資系IT平均年収（エン カイシャの評判より）：日本マイクロソフト1,283万円、シスコ1,174万円、セールスフォース・ジャパン1,106万円、アドビ1,014万円、日本IBM 934万円、SAPジャパン932万円、日本オラクル877万円",
+        "30代で年収1,000万円超の比率：日本企業は全体の2%、外資系企業は13%（出典：エンワールド『外資越境転職』調査）",
+        "外資はジョブ型雇用ベースで年功序列が評価に影響しない、成果に応じたベース給+インセンティブ"
+      ]
+    },
+    {
+      "url": "https://www.jil.go.jp/institute/zassi/backnumber/2022/special/pdf/018-025.pdf",
+      "domain": "jil.go.jp",
+      "type": "official_stat",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "外資ジョブ型企業ではJob Description（JD）が職種ごとに用意され、責任範囲・カバー範囲・業務複雑性・スキル要件が記載される",
+        "採用面接は採用部門マネジャーが実施し成否を決定、人事は助言にとどまる（部門主導）",
+        "採用条件（年俸・職務等級）は採用部門の裁量が大きく、マネジャーが等級と年俸を判断する",
+        "出典：労働政策研究・研修機構（JILPT）『日本労働研究雑誌 No.739』馬場俊太郎『外資ジョブ型企業人事から見たジョブ型雇用の運用』"
+      ]
+    },
+    {
+      "url": "http://xn--hoqq9vuuncosr5dimw5ld.jp/%E6%88%90%E5%8A%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E4%BA%BA%E6%9D%90%E5%83%8F/",
+      "domain": "外資転職エージェント比較",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "JETRO『第6回対日直接投資に関する外資系企業の意識調査』では、技術系中途採用で重視される能力は『技術力67.0%』『専門知識52.7%』『外国語能力45.1%』『研究・専門能力25.0%』",
+        "事務系中途では『営業・販売能力54.4%』『外国語能力48.5%』『専門知識39.8%』『事務能力31.6%』",
+        "マネジャークラスでは『管理能力64.2%』『外国語能力54.5%』『指導能力38.8%』『専門知識31.3%』",
+        "アナログスペック面では『積極性』『コミュニケーション能力』『リーダーシップ』『ユニークさ・個性』『セルフマネジメント』が重視される"
+      ]
+    },
+    {
+      "url": "https://note.com/tenshoku_compass/n/n878bb04e9843",
+      "domain": "note.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "外資IT営業はソリューション型が主流：顧客ニーズヒアリング→自社製品で解決提案→ROI/導入手順提示",
+        "KPI管理とセルフマネジメントが必須。上司は細かい進捗管理をしないため、計画→実行→改善のサイクルを自走できる必要がある",
+        "Salesforce/HubSpotなどCRMツール、パイプライン管理、四半期/月次振り返りが基本動作",
+        "プレゼン・交渉力（PowerPoint資料作成、ストーリーテリング、価格交渉）も重視される"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "claim": "要素1：職種別の専門スキル（クラウド AWS/Azure/GCP、開発 Java/Python、セキュリティ、DevOps、SaaS製品/業界知識）が即戦力として最重視される",
+      "evidence_urls": [
+        "https://sincereed-agent.com/column/foreign-owned-itcompany_tensyoku/",
+        "https://www.movin.co.jp/it/special/special105.html",
+        "http://xn--hoqq9vuuncosr5dimw5ld.jp/%E6%88%90%E5%8A%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E4%BA%BA%E6%9D%90%E5%83%8F/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "要素2：数値化された定量的実績（前年比120%売上達成、改善で生産性○%向上 など）が必須。ジョブ型/成果主義で職務記述書の責任範囲に紐づく成果を語れることが評価される",
+      "evidence_urls": [
+        "https://sincereed-agent.com/column/foreign-owned-itcompany_tensyoku/",
+        "https://www.kotora.jp/c/78512-2/",
+        "https://www.jil.go.jp/institute/zassi/backnumber/2022/special/pdf/018-025.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "要素3：ビジネス英語力。職種・ポジションにより目安は変動するが、IT業界全般でTOEIC700〜800点が一般的な目安、海外チーム連携・本社直属ポジションでは800〜900点相当が必要",
+      "evidence_urls": [
+        "https://sincereed-agent.com/column/foreign-owned-itcompany_tensyoku/",
+        "https://www.enworld.com/candidates/career-advices/foreign-job-change/language/toeic-score.html",
+        "https://www.lhh.com/ja-jp/insights/career-gaishikei-english-skill",
+        "https://plus.onecareer.jp/articles/999"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "要素4：自走力・主体性・リーダーシップ（オーナーシップ）。指示待ちでなく自ら課題発見・行動できること。AmazonのOLP『Ownership』、IBMの自主学習文化、MS『助けを求め自分から動く』など各社で重視",
+      "evidence_urls": [
+        "https://plus.onecareer.jp/articles/999",
+        "https://www.movin.co.jp/it/special/special105.html",
+        "https://gaishiit.com/blog/1/3",
+        "http://xn--hoqq9vuuncosr5dimw5ld.jp/%E6%88%90%E5%8A%9F%E3%83%9E%E3%83%8B%E3%83%A5%E3%82%A2%E3%83%AB/%E4%BA%BA%E6%9D%90%E5%83%8F/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "要素5：グローバル環境への適応力とスピード感。多国籍チームとの協働、文化的多様性の理解、変化の速い意思決定/リリースサイクルへの対応",
+      "evidence_urls": [
+        "https://sincereed-agent.com/column/foreign-owned-itcompany_tensyoku/",
+        "https://www.kotora.jp/c/78512-2/",
+        "https://plus.onecareer.jp/articles/999"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "30代の年収分岐：日本企業の30代で年収1,000万円超は全体の2%だが、外資系企業では13%（エンワールド調査）。外資系IT平均年収は日本MS 1,283万円、Cisco 1,174万円、セールスフォース・ジャパン 1,106万円など1,000万円超の企業が複数",
+      "evidence_urls": [
+        "https://www.enworld.com/candidates/career-advices/useful-column/industry/it/gaishi-IT.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "外資ITはジョブ型雇用ベースで職務記述書（JD）に紐づく即戦力採用が中心。20代・30代の転職が有利とされる（吸収力・体力・キャリア構築余地）",
+      "evidence_urls": [
+        "https://www.jil.go.jp/institute/zassi/backnumber/2022/special/pdf/018-025.pdf",
+        "https://mynavi-agent.jp/knowledge/common/529.html",
+        "https://sincereed-agent.com/column/foreign-owned-itcompany_tensyoku/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "評価される出身キャリア：日系大手SIer（NTTデータ・NEC・富士通）、ITコンサル/戦略ファーム（アクセンチュア・デロイト・ベイカレント）、SaaS系ベンチャー営業/導入経験者、グローバルPJ経験者。『コンサル→SaaS』『SIer→プリセールス/CS』『IT企画→グローバルPMO』が高評価パターン",
+      "evidence_urls": [
+        "https://www.movin.co.jp/it/special/special105.html"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "TOEIC L&Rで895点以上の取得者は全体の4.4%（一般財団法人国際ビジネスコミュニケーション協会『TOEIC Program DATA＆ANALYSIS 2024』）",
+      "evidence_urls": [
+        "https://www.enworld.com/candidates/career-advices/foreign-job-change/language/toeic-score.html"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "gaps": [
+    "5要素の『公式な共通定義』は存在しない。本リサーチは複数の転職エージェント記事・JETRO/JILPT資料から共通項を抽出した実務的フレームのため、図解では『5要素の出典は転職エージェント各社の共通項を整理したもの』と明示するのが望ましい",
+    "30代年収分岐の一次データが不足。エンワールド独自調査に依拠しており、厚労省『賃金構造基本統計調査』やJILPT『若年労働力人口の動向』の外資/日系比較データを追加で確認できると一次情報の根拠が強化される",
+    "JETROの対日直接投資意識調査は2000年実施分が引用されている記事のみ確認できた。最新版（JETRO『日本市場における外資系企業のビジネスサーベイ』など）の能力重視ランキングを当たると鮮度が上がる",
+    "職種別の具体的な採用実績データ（採用倍率・書類通過率など）は今回未収集。各社のキャリアサイト（Microsoft Careers, AWS Jobs等）で求人票のMust条件を直接抽出すると、図解の説得力が増す"
+  ]
+}

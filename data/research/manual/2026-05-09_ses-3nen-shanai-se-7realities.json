@@ -1,0 +1,130 @@
+{
+  "topic": "SES歴3年が社内SEに転職して気づいた7つのリアル",
+  "researched_at": "2026-05-09",
+  "questions": [
+    "SES→社内SEの年収変化はどの程度か？上がる人／下がる人の比率は？",
+    "残業時間はどれだけ違うのか？（SES客先常駐 vs 社内SE）",
+    "業務範囲（コーディング比率／ベンダーコントロール／社内調整）の現実は？",
+    "スキル陳腐化リスクは本当にあるか？AI時代の評価軸はどう変わったか？",
+    "情シス＝コストセンター評価の構造的な壁とは？",
+    "2026年の社内SEは生成AI／DX主担当を兼務させられる構造か？",
+    "転職難易度（求人倍率／書類通過率／SES経験者の評価）はどうか？"
+  ],
+  "key_findings": [
+    {
+      "claim": "技術職（SE・インフラ・Webエンジニア）の転職後、66.1%が年収増加、増加者の平均増加額は+72.7万円",
+      "source": "doda 転職前後の年収変動レポート 2025年11月版",
+      "url": "https://www.persol-career.co.jp/newsroom/news/research/2025/20251225_2032/",
+      "verified": true
+    },
+    {
+      "claim": "IT・通信業界の決定年収は2023年度469万→2024年度486万（+17万）で全業種年収アップ幅1位",
+      "source": "doda 2024年度版決定年収レポート",
+      "url": "https://www.persol-career.co.jp/newsroom/news/research/2025/20250512_1824/",
+      "verified": true
+    },
+    {
+      "claim": "SESエンジニア平均年収408万円／全ITエンジニア平均537万円（2024/10–2025/9）",
+      "source": "Geekly",
+      "url": "https://www.geekly.co.jp/column/cat-position/ses_engineer_annual_salary/",
+      "verified": true
+    },
+    {
+      "claim": "社内SE中央値580〜590万円（2026年版）。クラウド上級650〜900万、セキュリティ620〜850万",
+      "source": "社内SEナビ 2026年版",
+      "url": "https://se-navi.jp/media/8184/",
+      "verified": true
+    },
+    {
+      "claim": "社内SEの平均残業時間16.0時間／月（前回21.5hから減）",
+      "source": "パーソルキャリア 職種別平均残業時間調査 2025/1発表",
+      "url": "https://www.persol-career.co.jp/newsroom/news/research/2025/20250131_1703/",
+      "verified": true
+    },
+    {
+      "claim": "全職種平均残業20.6時間／月（2025年版、3年連続減少）",
+      "source": "パーソルキャリア 平均残業時間の実態調査【2025年版】",
+      "url": "https://www.persol-career.co.jp/newsroom/news/research/2025/20251201_2023/",
+      "verified": true
+    },
+    {
+      "claim": "SE全体平均残業21時間／月。客先常駐は40〜60時間圏が珍しくない",
+      "source": "レバテックキャリア / 集合知",
+      "url": "https://career.levtech.jp/guide/knowhow/article/31030/",
+      "verified": "partial",
+      "notes": "21hは公的指標、40〜60hは集合知"
+    },
+    {
+      "claim": "doda転職求人倍率2026/3：2.39倍（全職種）",
+      "source": "doda 転職求人倍率レポート",
+      "url": "https://doda.jp/guide/kyujin_bairitsu/",
+      "verified": true
+    },
+    {
+      "claim": "IT人材の転職求人倍率11.6倍（2024/12レバテック試算）",
+      "source": "レバテック",
+      "url": "https://levtech.jp/partner/guide/article/detail/278/",
+      "verified": true,
+      "notes": "IT特化サイト内ベース。全国指標と読み替え不可"
+    },
+    {
+      "claim": "doda登録者の入社決定職種で社内SEが37%（最多）／別集計で68%",
+      "source": "doda ITエンジニア中途採用マーケットレポート2025年12月発行",
+      "url": "https://www.saiyo-doda.jp/report/18103",
+      "verified": true,
+      "notes": "37%は2025/9-11月集計、68%は別集計。語り分け注意"
+    },
+    {
+      "claim": "日本企業の85.1%でDX推進人材が不足（米独より著しく高い）",
+      "source": "IPA DX動向2025",
+      "url": "https://it.impress.co.jp/articles/-/28372",
+      "verified": true
+    },
+    {
+      "claim": "DX関連人材が日常IT運用・ヘルプデスク・資料作成に時間を取られ便利屋化",
+      "source": "ITmedia「DX人材お手並み拝見状態の構造的理由」 2025/12",
+      "url": "https://www.itmedia.co.jp/enterprise/articles/2512/10/news013.html",
+      "verified": true
+    },
+    {
+      "claim": "生成AI導入主担当：統制重視→情シス、業務変革重視→DX推進",
+      "source": "AINOW 2026/4",
+      "url": "https://ainow.ai/2026/04/07/277895/",
+      "verified": true
+    },
+    {
+      "claim": "情シス・社内SEはバックオフィスのコストセンター扱いで、ボーナスに差がつきにくい中間評価に集中",
+      "source": "Strategy& / 社内SEナビ / 久松剛 note",
+      "url": "https://note.com/makaibito/n/n48dfd40230fe",
+      "verified": "partial",
+      "notes": "定性的な業界共通認識"
+    },
+    {
+      "claim": "週3日以上在宅30.2%／フルリモート10.1%、業種別最多はIT・インターネット",
+      "source": "国交省 令和6年度テレワーク人口実態調査",
+      "url": "https://www.mlit.go.jp/toshi/kankyo/content/001879091.pdf",
+      "verified": true
+    },
+    {
+      "claim": "社内SEの応募書類通過率64%（個人体験記）",
+      "source": "note 社内SE転職経験者",
+      "url": "https://note.com/sobagoro/n/nc602b915b02c",
+      "verified": false,
+      "notes": "N=1。図解では※定性ベース注記を必須"
+    }
+  ],
+  "stereotypes_to_break": [
+    "社内SE＝楽（→生成AI主担当兼務率の高さで反証）",
+    "社内SE＝年収低い（→中央値580〜590万・dodaIT通信1位 +17万で反証）",
+    "SES経験は社内SEで評価されない（→上流経験こそ最大資産。ただし'課題解決ストーリー'の言語化が必須）"
+  ],
+  "gaps": [
+    "社内SE限定の正確な求人倍率（公的数値なし）",
+    "SES→社内SE転職者の後悔して戻った率の定量データ（メディア間で散らばり、確定値なし）",
+    "社内SE個人の業務時間配分（コード/調整/運用）の正確な比率データ"
+  ],
+  "tone_notes": [
+    "刺さるキーフレーズ：「商流を浅くする最初の一手」「残業ではなく翻訳力で評価される」「DX人材不足85%＝便利屋化確率」",
+    "冒頭で『2020年までの話』否定形を使い離脱を防ぐ（メモリ shanai_se_pitfalls.md 準拠）"
+  ]
+}

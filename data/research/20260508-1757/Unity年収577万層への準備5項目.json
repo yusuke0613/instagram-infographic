@@ -1,0 +1,175 @@
+{
+  "run_id": "20260508-1757",
+  "title": "Unity年収577万層への準備5項目",
+  "slug": "Unity年収577万層への準備5項目",
+  "collected_at": "2026-05-08T17:58:00+09:00",
+  "sources": [
+    {
+      "url": "https://career.levtech.jp/guide/knowhow/article/271012/",
+      "domain": "career.levtech.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "レバテックキャリアのプログラミング言語別平均年収（想定年収）ランキング（2026年3月12日時点）",
+        "1位 Scala 約626万円 / 2位 Go 約621万円 / 3位 Unity 約577万円 / 4位 TypeScript 約560万円 / 5位 Swift 約526万円",
+        "注記: Unityはゲームエンジンだが、C#のスキルと直結するため言語スキルの枠組みとして算出",
+        "記事最終更新日: 2026年3月26日"
+      ]
+    },
+    {
+      "url": "https://freelance.levtech.jp/guide/detail/664/",
+      "domain": "freelance.levtech.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "レバテック利用者実績データに基づく会社員Unityエンジニアの平均年収は約577万円（2025年10月時点）",
+        "フリーランスUnityエンジニアの平均年収は約875万円（稼働日数5日案件・2025年10月時点）",
+        "年収アップに有効: 3D対応スキル、XR等の最新技術キャッチアップ、ポートフォリオ作成（成果物・使用技術・工夫点・スクショ/動画）"
+      ]
+    },
+    {
+      "url": "https://career.levtech.jp/guide/knowhow/article/625/",
+      "domain": "career.levtech.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Unityエンジニア求人の年収レンジは400〜800万円が中心、下限250万円〜上限1500万円までブレ幅あり",
+        "Unity拡張用言語はC#（独力でコーディング・テスト・バグフィックスができるレベルが評価される）",
+        "求人例（450〜800万円）: Unityでスマホアプリ開発1年以上+一人で全工程担当できるスキル",
+        "求人例（350〜700万円）: Unityでのゲーム開発経験 + Unityでスマホアプリ開発2年以上 + GitHubチーム開発2年以上",
+        "求められる周辺スキル: 3Dモデリング、メモリ調整、UI/UX、業界知識"
+      ]
+    },
+    {
+      "url": "https://note.com/mecampus/n/ncd559ccce3e6",
+      "domain": "note.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "C#の必須概念: 基礎構文、クラス/オブジェクト指向（継承・ポリモーフィズム・Interface）、LINQ、async/await、UniTask",
+        "Unity特有API: MonoBehaviourライフサイクル(Awake/Start/Update)、Coroutine、Instantiate、GetComponent",
+        "Unityエディタ作業: uGUI/UI Toolkit、Animator/Timeline、Physics(Rigidbody/Collider)、パーティクル、Addressables",
+        "副業・実務ではGit/GitHubがほぼ必須（バージョン管理）"
+      ]
+    },
+    {
+      "url": "https://www.bigdata-navi.com/aidrops/7840/",
+      "domain": "bigdata-navi.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Unityエンジニアの正社員年収相場は400〜600万円程度、実務経験5年超で年収が上がりやすい",
+        "年収アップ要素: 発注元会社入社、関連業界専門知識、マネジメントスキル、最新技術キャッチアップ、ポートフォリオ充実、副業・フリーランス独立",
+        "C#以外にJavaScriptやObjective-Cを扱えると対応案件幅が広がる"
+      ]
+    },
+    {
+      "url": "https://flxy.jp/media/article/26981",
+      "domain": "flxy.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Unityエンジニア平均年収は実務経験5年未満でも400〜600万円程度",
+        "実務経験5年以上で年収1,000万円超のケースも",
+        "Unityは世界で作られているゲームの約50%、VR/ARコンテンツでは世界シェア約60%"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "claim": "レバテックキャリアの言語別平均年収ランキングでUnityは3位、約577万円（2026年3月12日時点）",
+      "evidence_urls": ["https://career.levtech.jp/guide/knowhow/article/271012/"],
+      "confidence": "high"
+    },
+    {
+      "claim": "UnityはゲームエンジンだがランキングではC#スキルと直結する言語枠で算出されている（=577万円層を狙うにはC#力が必須）",
+      "evidence_urls": ["https://career.levtech.jp/guide/knowhow/article/271012/"],
+      "confidence": "high"
+    },
+    {
+      "claim": "Unity求人で求められるC#スキルは「独力でコーディング・テスト・バグフィックスできる」レベル。具体にはMonoBehaviourライフサイクル、Coroutine/async/await(UniTask)、LINQ、Interface活用などが頻出",
+      "evidence_urls": [
+        "https://career.levtech.jp/guide/knowhow/article/625/",
+        "https://note.com/mecampus/n/ncd559ccce3e6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "中堅以上の求人（450〜800万円帯）では「Unityでスマホアプリ開発1〜2年以上」「一人で全工程担当」「GitHubでのチーム開発経験」が必須要件として並ぶ",
+      "evidence_urls": ["https://career.levtech.jp/guide/knowhow/article/625/"],
+      "confidence": "high"
+    },
+    {
+      "claim": "577万円層〜上に伸ばすには3D対応力・メモリ/アセット最適化（Addressables等）・UI/UX・XR(VR/AR)等の最新技術キャッチアップが評価ポイントになる",
+      "evidence_urls": [
+        "https://career.levtech.jp/guide/knowhow/article/625/",
+        "https://freelance.levtech.jp/guide/detail/664/",
+        "https://www.bigdata-navi.com/aidrops/7840/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "ポートフォリオ（過去成果物・使用技術・担当領域・工夫点・スクショ/動画）の充実が転職・案件獲得の差別化要素として頻繁に挙げられる",
+      "evidence_urls": [
+        "https://freelance.levtech.jp/guide/detail/664/",
+        "https://www.bigdata-navi.com/aidrops/7840/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Unityは世界で作られているゲームの約50%、VR/ARコンテンツでは約60%のシェアを持ち、ゲーム以外（XR・建築・医療等）への業務範囲拡大が年収アップ余地を生んでいる",
+      "evidence_urls": ["https://flxy.jp/media/article/26981"],
+      "confidence": "medium"
+    },
+    {
+      "claim": "正社員Unityエンジニアの一般的な年収レンジは400〜600万円で、577万円はこのレンジ上位（中堅〜やや上）に当たる",
+      "evidence_urls": [
+        "https://www.bigdata-navi.com/aidrops/7840/",
+        "https://flxy.jp/media/article/26981",
+        "https://career.levtech.jp/guide/knowhow/article/625/"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "checklist_5_items": [
+    {
+      "item": "C#中級スキル（MonoBehaviourライフサイクル、async/await・UniTask、LINQ、Interface設計）を独力で運用できる",
+      "evidence_urls": [
+        "https://career.levtech.jp/guide/knowhow/article/271012/",
+        "https://career.levtech.jp/guide/knowhow/article/625/",
+        "https://note.com/mecampus/n/ncd559ccce3e6"
+      ]
+    },
+    {
+      "item": "Unityエディタ実装力（uGUI/UI Toolkit、Animator、Physics、Addressablesでのアセット/メモリ管理）",
+      "evidence_urls": [
+        "https://note.com/mecampus/n/ncd559ccce3e6",
+        "https://career.levtech.jp/guide/knowhow/article/625/"
+      ]
+    },
+    {
+      "item": "Git/GitHubでのチーム開発経験（中堅求人では「2年以上」が要件として明示される）",
+      "evidence_urls": [
+        "https://career.levtech.jp/guide/knowhow/article/625/",
+        "https://note.com/mecampus/n/ncd559ccce3e6"
+      ]
+    },
+    {
+      "item": "スマホアプリを一人で全工程担当した実績（求人要件で「1人で全工程担当」「スマホアプリ開発1〜2年以上」が頻出）",
+      "evidence_urls": ["https://career.levtech.jp/guide/knowhow/article/625/"]
+    },
+    {
+      "item": "成果物ポートフォリオ＋XR/3D等の差別化技術（VR/AR・3Dモデリング・最新トレンドキャッチアップで577万→上位帯への押し上げ要素）",
+      "evidence_urls": [
+        "https://freelance.levtech.jp/guide/detail/664/",
+        "https://www.bigdata-navi.com/aidrops/7840/",
+        "https://flxy.jp/media/article/26981"
+      ]
+    }
+  ],
+  "gaps": [
+    "レバテックキャリア側の577万円算出の母集団（求人件数・経験年数分布）は公開されていない。一次データ（レバテックの調査リリースPDF等）が公開されれば信頼度がさらに上がる",
+    "「577万円層」に到達した個人のスキル分布の定量データ（経験年数別中央値、保有スキル組み合わせの統計）は今回取れていない。レバテックの個別年収診断や転職実績統計が一次情報として有用",
+    "C#認定資格・Unity認定試験の年収押上げ効果に関する定量根拠はベンダー記事の言及にとどまり、独立した統計が無い"
+  ]
+}

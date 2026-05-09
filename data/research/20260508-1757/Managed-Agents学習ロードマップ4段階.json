@@ -1,0 +1,219 @@
+{
+  "run_id": "20260508-1757",
+  "title": "Managed Agents学習ロードマップ4段階",
+  "slug": "Managed-Agents学習ロードマップ4段階",
+  "collected_at": "2026-05-08T17:57:00+09:00",
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/managed-agents/overview",
+      "domain": "platform.claude.com",
+      "type": "official_docs",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Claude Managed Agentsは『Agent / Environment / Session / Events』の4つのコア概念で構成される",
+        "Agent = モデル・システムプロンプト・ツール・MCPサーバー・Skillsの定義",
+        "Environment = パッケージやネットワーク設定を含むクラウドコンテナのテンプレート",
+        "Session = AgentとEnvironmentを参照して走る実行インスタンス（タスク実行と出力生成）",
+        "Events = ユーザーターン・ツール結果・ステータス更新などのメッセージ（SSEでストリーム）",
+        "ハーネスはプロンプトキャッシュ・コンパクション等の最適化を内蔵"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/managed-agents/quickstart",
+      "domain": "platform.claude.com",
+      "type": "official_docs",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Quickstartの手順は『Agent作成 → Environment作成 → Session開始 → Eventsストリーム』の4ステップ",
+        "CLIは `ant beta:agents create` / `ant beta:environments create` で作成",
+        "Pythonでは `client.beta.sessions.create(agent=agent.id, environment_id=environment.id)` でSessionを作る",
+        "ユーザーメッセージは `client.beta.sessions.events.send(... type='user.message')` で送信",
+        "ストリーム上のイベント種別は `agent.message` / `agent.tool_use` / `session.status_idle` など"
+      ]
+    },
+    {
+      "url": "https://docs.anthropic.com/claude/reference/getting-started-with-the-api",
+      "domain": "docs.anthropic.com",
+      "type": "official_docs",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Managed AgentsのBetaエンドポイント: `POST /v1/agents`, `GET /v1/agents`, `POST /v1/sessions`, `GET /v1/sessions/{id}/stream`, `POST /v1/environments`, `GET /v1/environments`",
+        "Claude Managed Agentsは直接のClaude API経由のみ提供（Bedrock / Vertex / Azureでは未対応）",
+        "Sessions / Agents / Environmentsのリクエスト上限は32MB"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/managed-agents/tools",
+      "domain": "platform.claude.com",
+      "type": "official_docs",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "全てのManaged AgentsリクエストはBetaヘッダ `anthropic-beta: managed-agents-2026-04-01` が必要（SDKは自動付与）",
+        "新ツールセット `agent_toolset_20260401` を有効化すると全ツール（bash / read / write / edit / glob / grep / web_fetch / web_search）が一括で使える",
+        "カスタムツールはAgentレベルで `type: custom` として定義してSession中で呼び出せる"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "domain": "platform.claude.com",
+      "type": "official_docs",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Managed Agentsはトークン課金 + セッションランタイム課金の2軸（Web検索は別途$10 / 1,000 searches）",
+        "セッションランタイムは `$0.08 / session-hour`（ミリ秒単位）。idle時間は課金されない",
+        "公式の試算例: Opus 4.7で50K入力/15K出力、1時間セッション = 入力$0.25 + 出力$0.375 + ランタイム$0.08 = 計 $0.705",
+        "プロンプトキャッシュ有効時（80%キャッシュヒット）の同条件の例は計 $0.525",
+        "Managed AgentsではCode Execution用のcontainer-hour課金は適用されない（session runtimeに置き換わる）"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/engineering/managed-agents",
+      "domain": "anthropic.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Anthropic Engineering Blog『Scaling Managed Agents: Decoupling the brain from the hands』",
+        "認証はリソース束ねかVault管理。MCPツールの認証情報はVaultに格納し、Claudeはプロキシ経由で呼ぶためハーネスがクレデンシャルを保持しない",
+        "Sessionは『Claudeのコンテキストウィンドウそのもの』ではなく、状態を保持するステートマシンとして設計されている"
+      ]
+    },
+    {
+      "url": "https://itbrief.news/story/anthropic-launches-claude-managed-agents-in-public-beta",
+      "domain": "itbrief.news",
+      "type": "press_coverage",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Anthropicが2026年4月8日にClaude Managed Agentsをパブリックベータで公開",
+        "提供物: サンドボックス実行・認証・チェックポイント・クレデンシャル管理・実行トレース。長時間セッション（数時間）で進捗保持",
+        "Multi-agent coordination（協調オーケストレーション）と self-evaluation はリサーチプレビュー段階",
+        "内部評価では構造化ファイル生成タスクで標準ループ比 最大+10ポイントの成功率向上を確認"
+      ]
+    },
+    {
+      "url": "https://help.apiyi.com/en/anthropic-claude-managed-agents-public-beta-launch-en.html",
+      "domain": "help.apiyi.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "公開日 2026-04-08、Betaヘッダ `managed-agents-2026-04-01`、新ツールセット `agent_toolset_20260401`、SSE形式のevent stream",
+        "対応モデルはClaude Sonnet 4.6 / Opus 4.6 / Haiku 4.5（1M contextはOpus・Sonnetでデフォルト有効）",
+        "セッションは `active` 状態である限り $0.08/h で課金される（status_idleでも）。タスク終了後は明示的にcloseするのが推奨"
+      ]
+    },
+    {
+      "url": "https://blog.laozhang.ai/en/posts/claude-managed-agents",
+      "domain": "blog.laozhang.ai",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "2026-04-19時点でmemory / multiagent / outcomesは引き続きresearch previewの位置付け",
+        "選択指針は『Managed Agents = ホストされたランタイム』『Agent SDK = 自前ホスト・整形』『Messages API = 最薄レイヤ』の3階層",
+        "現行Managed Agentsフローは『agent作成 → environment作成 → session開始 → events送信 → ストリーム受信』の5アクション"
+      ]
+    },
+    {
+      "url": "https://www.edtechinnovationhub.com/news/anthropic-brings-persistent-memory-to-claude-managed-agents-in-public-beta",
+      "domain": "edtechinnovationhub.com",
+      "type": "press_coverage",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "2026-04-23、Managed Agentsの永続メモリ機能がパブリックベータで公開",
+        "メモリはファイルシステム上にファイルとして保存され、API/Consoleで管理・編集・エクスポート可能",
+        "早期採用: Netflix / Rakuten / Wisedocs / Ando。Rakutenではコスト-27%、レイテンシ-34%、初回エラー率-97%の事例"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Claude Managed Agentsは2026年4月8日にパブリックベータで公開された",
+      "evidence_urls": [
+        "https://itbrief.news/story/anthropic-launches-claude-managed-agents-in-public-beta",
+        "https://help.apiyi.com/en/anthropic-claude-managed-agents-public-beta-launch-en.html",
+        "https://www.reworked.co/digital-workplace/anthropic-launches-claude-managed-agents-to-speed-up-ai-development/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Managed Agentsのコア概念は『Agent / Environment / Session / Events』の4つで、これがそのまま実装フローのレイヤとなる",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/managed-agents/overview",
+        "https://platform.claude.com/docs/en/managed-agents/quickstart"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "公式Quickstartでの実装手順は『Agent作成 → Environment作成 → Session開始 → Eventsストリーム』の4ステップ",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/managed-agents/quickstart"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "全てのManaged Agents APIリクエストには `anthropic-beta: managed-agents-2026-04-01` ヘッダが必要（公式SDKは自動付与）",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/managed-agents/tools",
+        "https://help.apiyi.com/en/anthropic-claude-managed-agents-public-beta-launch-en.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "標準ツールは `agent_toolset_20260401` で一括有効化できる（bash / read / write / edit / glob / grep / web_fetch / web_search）",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/managed-agents/tools"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "課金は『トークン課金 + セッションランタイム $0.08/session-hour』の2軸（Web検索は別途 $10 / 1,000 searches）",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/pricing",
+        "https://www.finout.io/blog/anthropic-just-launched-managed-agents.-lets-talk-about-how-were-going-to-pay-for-this"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Anthropic公式の試算では、Opus 4.7で50K入力/15K出力の1時間セッションは合計$0.705（プロンプトキャッシュ80%ヒット時で$0.525）",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/pricing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Multi-agent coordination・self-evaluation・persistent memory（一部は4/23公開）はリサーチプレビュー〜ベータの段階機能で、本番採用時は段階的なロードアップが必要",
+      "evidence_urls": [
+        "https://itbrief.news/story/anthropic-launches-claude-managed-agents-in-public-beta",
+        "https://blog.laozhang.ai/en/posts/claude-managed-agents",
+        "https://www.edtechinnovationhub.com/news/anthropic-brings-persistent-memory-to-claude-managed-agents-in-public-beta"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Managed Agentsは直接のClaude API経由のみで利用可（Amazon Bedrock / Vertex AI / Azureでは現状未対応）",
+      "evidence_urls": [
+        "https://docs.anthropic.com/claude/reference/getting-started-with-the-api"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "認証情報はVaultで管理され、MCPツール呼び出しはプロキシ経由のため、ハーネスがクレデンシャルを直接保持しない",
+      "evidence_urls": [
+        "https://www.anthropic.com/engineering/managed-agents",
+        "https://platform.claude.com/docs/en/managed-agents/sessions"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Anthropic内部評価では、構造化ファイル生成タスクで通常のプロンプトループ比 最大+10ポイントの成功率向上が報告されている",
+      "evidence_urls": [
+        "https://itbrief.news/story/anthropic-launches-claude-managed-agents-in-public-beta"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "gaps": [
+    "『学習ロードマップ4段階』という分け方は本記事固有の整理。公式は『Agent / Environment / Session / Events』の4概念や『Quickstart 4ステップ』を提示しているため、これを4段階の足場として採用するのが妥当（追加で当たるなら https://platform.claude.com/docs/en/managed-agents/overview と quickstart）。",
+    "永続メモリ機能の正式GA時期、料金体系の確定値は未公表（Anthropic公式リリースノートと pricing ページの更新を要追跡）。",
+    "Multi-agent coordinationのリサーチプレビュー期間中の利用枠・レートリミットは公式に明記されていない（要・platform.claude.comのrate-limitsページ確認）。",
+    "日本語の一次情報（Anthropic Japan / 公式日本語ドキュメント）は現状少なく、本研究では英語版docsを根拠としている。"
+  ]
+}

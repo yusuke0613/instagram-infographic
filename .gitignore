@@ -1,0 +1,16 @@
+.env
+.env.*
+!.env.example
+
+# Local Claude/Cursor settings
+.claude/settings.local.json
+
+# Local MCP config that may contain tokens
+.mcp.json
+.mcp.local.json
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+.DS_Store

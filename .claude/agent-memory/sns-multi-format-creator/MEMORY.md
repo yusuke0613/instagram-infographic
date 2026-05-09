@@ -1,0 +1,3 @@
+- [Hook patterns for 内製SE/情シス](feedback_hook_patterns.md) — 数値インパクト＋逆説を冒頭に置くと刺さる
+- [CONTENT_DATA card composition](feedback_content_data_cards.md) — チェックリスト系テーマは1枚=1動作で動詞起点に統一
+- [Hashtag set for 社内SE転職](reference_hashtag_sets.md) — 社内SE転職アフィリ用の安定タグ群

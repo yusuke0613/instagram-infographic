@@ -1,0 +1,208 @@
+{
+  "run_id": "20260508-1757",
+  "title": "AIクレジット制 月額試算テンプレ",
+  "slug": "AIクレジット制-月額試算テンプレ",
+  "collected_at": "2026-05-08T17:57:00+09:00",
+  "sources": [
+    {
+      "url": "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+      "domain": "github.blog",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "2026年6月1日に全GitHub Copilotプランが従量課金制（usage-based billing）へ移行",
+        "Premium Request Units（PRU）を廃止し GitHub AI Credits に置換",
+        "クレジット消費はinput/output/cached tokenの合計をモデル別APIレートで算出",
+        "コード補完とNext Edit Suggestionsはクレジットを消費しない（無制限のまま）",
+        "プラン月額は据え置き：Pro $10、Pro+ $39、Business $19/user、Enterprise $39/user",
+        "各プランに月額と同額のAIクレジットが付与される",
+        "Business/Enterpriseは6〜8月にプロモーションクレジット（Business $30/user、Enterprise $70/user）を提供",
+        "Business/Enterpriseは組織全体でクレジットをプール共有可能"
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals",
+      "domain": "docs.github.com",
+      "type": "official_stat",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "1 GitHub AI Credit = $0.01 USD（固定レート）",
+        "$10予算 = 1,000 AI credits に相当",
+        "個人プランは Free / Pro / Pro+ の3種でクレジット枠が異なる",
+        "月額プランのPro/Pro+ユーザーは2026年6月1日に自動移行",
+        "年額プランは契約期限まで既存PRU方式で継続、満了時にCopilot Freeへ",
+        "クレジット枯渇時は追加予算（USD指定）で従量利用可能"
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing",
+      "domain": "docs.github.com",
+      "type": "official_stat",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "新使用量ベース料金は2026年6月1日発効",
+        "コストはモデル × 消費トークン数（input/output/cached）で決まる",
+        "Copilot code reviewはAIクレジット課金 + GitHub Actions分の二重課金（Self-hosted runnerはActions分を消費しない）",
+        "モデル乗数（multiplier）は使用量ベース課金には適用されない"
+      ]
+    },
+    {
+      "url": "https://docs.github.com/en/copilot/reference/copilot-billing/model-multipliers-for-annual-plans",
+      "domain": "docs.github.com",
+      "type": "official_stat",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "年額プラン継続ユーザー向けに2026年6月1日からモデル乗数が改定",
+        "Claude Opus 4.6: 3 → 27倍",
+        "Claude Opus 4.7: 15 → 27倍",
+        "Claude Sonnet 4.6: 1 → 9倍",
+        "GPT-5.4: 1 → 6倍",
+        "Gemini 3.1 Pro: 1 → 6倍",
+        "年額継続者は同じ作業をしても消費PRUが大幅増となる"
+      ]
+    },
+    {
+      "url": "https://dev.classmethod.jp/articles/shoma-github-copilot-pricing-major-revision-2026-june-1-premium-requests-to-github-ai-credits/",
+      "domain": "dev.classmethod.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Pro: 月額$10 → 1,000 Credits/月",
+        "Pro+: 月額$39 → 3,900 Credits/月",
+        "Business: 1,900 Credits/ユーザー/月（プール共有）",
+        "Enterprise: 3,900 Credits/ユーザー/月（プール共有）",
+        "計算例（Claude Sonnet系：input $3/Mtok, output $15/Mtok）：input 500 + output 200 → 約0.45 credits",
+        "Premium Requests時代は上限超過で安いモデルへフォールバックしたが、新方式はフォールバック無し（追加課金 or ブロック）"
+      ]
+    },
+    {
+      "url": "https://japan.zdnet.com/article/35246968/",
+      "domain": "japan.zdnet.com",
+      "type": "other",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "GitHubは4月20日に新規個人プラン申込を停止、4月22日にBusiness自己申込を停止（移行準備）",
+        "プラン基本料金は据え置き（Pro $10≒1600円、Pro+ $39≒6200円、Business $19/user≒3000円、Enterprise $39/user≒6200円）",
+        "プロモーション期間（6〜8月）はBusiness $30/user、Enterprise $70/user相当のクレジットを付与",
+        "従来は上限到達で低性能モデルへ切り替えだったが、新方式は使い切ったら停止（追加購入が必要）"
+      ]
+    },
+    {
+      "url": "https://forest.watch.impress.co.jp/docs/news/2105124.html",
+      "domain": "forest.watch.impress.co.jp",
+      "type": "other",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "コード補完・Next Edit Suggestionsはクレジット消費なし（全プラン）",
+        "5月上旬に予測コストを事前確認できる『プレビュー請求機能』が提供される",
+        "Business/Enterpriseは管理者によるプール共有設定・予算上限設定が可能"
+      ]
+    },
+    {
+      "url": "https://www.wheresyoured.at/exclusive-microsoft-moving-all-github-copilot-subscribers-to-token-based-billing-in-june/",
+      "domain": "wheresyoured.at",
+      "type": "other",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Business: 通常$19/user/月で$19分クレジット、初期プロモ（6-8月）は$30分プール付与",
+        "Enterprise: 通常$39/user/月で$39分クレジット、初期プロモ（6-8月）は$70分プール付与",
+        "組織契約はクレジットをユーザー間でプール共有"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "claim": "2026年6月1日からGitHub Copilotの全プランがPremium Request制から『GitHub AI Credits』ベースの従量課金制へ移行する",
+      "evidence_urls": [
+        "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+        "https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "1 GitHub AI Credit = $0.01 USD（固定）。クレジットはモデル別のtoken料金（input/output/cached合算）で消費される",
+      "evidence_urls": [
+        "https://docs.github.com/en/copilot/concepts/billing/usage-based-billing-for-individuals",
+        "https://docs.github.com/en/copilot/reference/copilot-billing/models-and-pricing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "プラン基本月額は据え置き：Pro $10/月（1,000 credits）、Pro+ $39/月（3,900 credits）、Business $19/user/月（1,900 credits）、Enterprise $39/user/月（3,900 credits）",
+      "evidence_urls": [
+        "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+        "https://dev.classmethod.jp/articles/shoma-github-copilot-pricing-major-revision-2026-june-1-premium-requests-to-github-ai-credits/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Business/Enterpriseは2026年6月〜8月のプロモーション期間に追加クレジットが付与される（Business $30/user、Enterprise $70/user 相当）",
+      "evidence_urls": [
+        "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+        "https://japan.zdnet.com/article/35246968/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "コード補完とNext Edit Suggestionsはクレジットを消費せず、全プランで引き続き利用可能",
+      "evidence_urls": [
+        "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/",
+        "https://forest.watch.impress.co.jp/docs/news/2105124.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "クレジットを使い切った場合、従来のような低性能モデルへの自動フォールバックは無くなり、追加クレジット購入か作業停止のいずれかになる",
+      "evidence_urls": [
+        "https://japan.zdnet.com/article/35246968/",
+        "https://dev.classmethod.jp/articles/shoma-github-copilot-pricing-major-revision-2026-june-1-premium-requests-to-github-ai-credits/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "試算例：Claude Sonnet系（input $3/Mtok, output $15/Mtok）で input 500 tok + output 200 tok = $0.0045 ≒ 0.45 credits/1リクエスト",
+      "evidence_urls": [
+        "https://dev.classmethod.jp/articles/shoma-github-copilot-pricing-major-revision-2026-june-1-premium-requests-to-github-ai-credits/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Business/Enterpriseは組織内でクレジットをプール共有でき、管理者は予算上限やオーバー利用許可を設定可能",
+      "evidence_urls": [
+        "https://forest.watch.impress.co.jp/docs/news/2105124.html",
+        "https://github.blog/news-insights/company-news/github-copilot-is-moving-to-usage-based-billing/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "年額プラン契約者は契約期限まで旧PRU方式で継続するが、6月1日以降は高性能モデルの乗数が大幅増となる（Claude Opus 4.7は3倍→27倍、Sonnet 4.6は1倍→9倍など）",
+      "evidence_urls": [
+        "https://docs.github.com/en/copilot/reference/copilot-billing/model-multipliers-for-annual-plans",
+        "https://qiita.com/Web_akira/items/445cab3615ba8b8dfca0"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "GitHubは2026年5月上旬に予測コストを事前確認できる『プレビュー請求機能』をBilling Overview経由で提供する",
+      "evidence_urls": [
+        "https://forest.watch.impress.co.jp/docs/news/2105124.html",
+        "https://docs.github.com/en/copilot/how-tos/manage-and-track-spending/prepare-for-your-move-to-usage-based-billing"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "新規申込は2026年4月20日からPro/Pro+/Studentが、4月22日からBusiness（GitHub Free/Team組織向けセルフサーブ）が一時停止中",
+      "evidence_urls": [
+        "https://docs.github.com/en/copilot/get-started/plans",
+        "https://japan.zdnet.com/article/35246968/"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "gaps": [
+    "全モデルの input/output/cached 1Mトークンあたり正確なUSD単価表（GitHub公式『Models and pricing』ページの完全な数値表）。記事には一部抜粋のみで、全体表のスナップショットは未取得",
+    "実利用ベースの代表的なシナリオ別月額試算（軽量チャットのみ／中規模agent利用／重agent利用）の公式参考値",
+    "Business/Enterpriseのプール共有における未使用クレジットの繰越可否（公式仕様の明示）",
+    "日本円建ての為替レート反映後の請求方式（USD決済固定か地域ベースか）"
+  ]
+}

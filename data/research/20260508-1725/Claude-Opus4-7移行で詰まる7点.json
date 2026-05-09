@@ -1,0 +1,254 @@
+{
+  "run_id": "20260508-1725",
+  "title": "Claude Opus4.7移行で詰まる7点",
+  "slug": "Claude-Opus4-7移行で詰まる7点",
+  "collected_at": "2026-05-08T17:25:00+09:00",
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/migration-guide",
+      "domain": "platform.claude.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "model ID は claude-opus-4-7 に更新する",
+        "thinking={type: 'enabled', budget_tokens: N} は Opus 4.7 で 400 エラーになる",
+        "thinking={type: 'adaptive'} と output_config.effort で代替する",
+        "effort は output_config に置く（thinking の中ではない）",
+        "BREAKING: assistant message prefills は 400 エラー、output_config.format か structured outputs を使う",
+        "effort-2025-11-24 / fine-grained-tool-streaming-2025-05-14 のベータヘッダは削除（GA 化）",
+        "client.beta.messages.create から client.messages.create に戻す"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7",
+      "domain": "platform.claude.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Breaking changes: Extended thinking budgets removed / Sampling parameters removed / Thinking content omitted by default / Updated token counting",
+        "新しい xhigh エフォート（high と max の間）を追加",
+        "task budgets が public beta",
+        "高解像度画像対応と 1:1 座標マッピング",
+        "より字義通りの指示追従、プロンプトの曖昧さがそのまま実行される",
+        "デフォルトのツール呼び出し回数は減少（推論で代替）"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "domain": "platform.claude.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "claude-opus-4-7 は 2027-04-16 まで Active",
+        "claude-opus-4-20250514（Opus 4 base）は 2026-04-14 deprecated、2026-06-15 retire",
+        "claude-sonnet-4-20250514 も 2026-06-15 retire（推奨置換は claude-sonnet-4-6）",
+        "Opus 4 の推奨後継は claude-opus-4-7"
+      ]
+    },
+    {
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "domain": "anthropic.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Claude Opus 4.7 は 2026-04-16 GA",
+        "1M コンテキスト、$5/M 入力・$25/M 出力（4.6 と同価格）",
+        "SWE-bench Verified 87.6%（4.6 は 80.8%）"
+      ]
+    },
+    {
+      "url": "https://www.aicodex.to/articles/migrating-to-claude-4-7",
+      "domain": "aicodex.to",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Opus 4.7 は 5 つの API 破壊的変更を持ち、未対応コードは 400 エラーになる",
+        "adaptive thinking はデフォルトでオフ。thinking フィールド未指定だと思考なしで動く",
+        "thinking display のデフォルトは 'omitted'。UI に思考過程を出すなら display: 'summarized' を明示",
+        "effort levels: low / medium / high / xhigh (新) / max。コーディング・エージェントは xhigh 推奨",
+        "Sonnet 4 / Opus 4 は 2026-06-15 リタイア"
+      ]
+    },
+    {
+      "url": "https://builder.aws.com/content/3Cl90CMMnqzCrkk6mXcmnGo1WTG/claude-opus-47-on-amazon-bedrock-apis-features-and-migration-guide",
+      "domain": "builder.aws.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Bedrock の Model ID は claude-opus-4-7（Opus 4.6 の -v1 サフィックスは無し）",
+        "temperature / top_p / top_k は non-default 値だと 400",
+        "budget_tokens は廃止、adaptive へ移行",
+        "effort は output_config 配下、thinking 配下ではない",
+        "thinking のデフォルト出力は空、signature で reasoning が起きたことを確認できる",
+        "interleaved thinking は自動で組み込み"
+      ]
+    },
+    {
+      "url": "https://www.rabinarayanpatra.com/blogs/claude-opus-4-7-release-and-migration-guide",
+      "domain": "rabinarayanpatra.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "新トークナイザにより同じテキストで最大 35% トークン増",
+        "per-token 価格は 4.6 と同一だが請求額は実質増えやすい",
+        "対策: タスク予算を絞る・xhigh→high に下げる・max_tokens のヘッドルームを再計算"
+      ]
+    },
+    {
+      "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
+      "domain": "claudecodecamp.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "テクニカルドキュメントで実測 1.47x、CLAUDE.md で 1.45x",
+        "コードはユニーク散文より重い（1.29–1.39x vs 1.20x）",
+        "CJK・絵文字・記号は 1.005–1.07x と影響小（多言語向けに有利）",
+        "プロンプトキャッシュはモデル単位で分割されるため 4.6→4.7 切替時に全プレフィクスが無効化されコールドスタートになる",
+        "Max プランの 5 時間レート枠は同程度の比率で早く枯れる"
+      ]
+    },
+    {
+      "url": "https://www.mindstudio.ai/blog/claude-opus-4-7-review/",
+      "domain": "mindstudio.ai",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "英語ワークロードで平均 12–18% トークン増の実測",
+        "非ラテン文字（中国語・日本語・韓国語・アラビア語・ヒンディー語）は 20–35% トークン削減",
+        "長期エージェントでサブタスク放棄バグが約 60% 減",
+        "Web リサーチ品質は 4.6 から後退するケースあり"
+      ]
+    },
+    {
+      "url": "https://mydataschool.com/blog/opus-4-7-released/",
+      "domain": "mydataschool.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Claude Code のデフォルト effort が全プランで xhigh に引き上げ（4.6 までは high）",
+        "xhigh × トークナイザ × 後半ターンの思考増幅という 3 つの乗算でコストが膨らむ",
+        "xhigh は複数ファイルのリファクタや並列バグ調査向け、lint や CI スクリプトには /effort high か medium に下げる",
+        "/effort high / /effort medium / /effort auto でセッション中に上書き可能",
+        "字義通り解釈が強まったため曖昧プロンプトは結果を破壊しやすい"
+      ]
+    },
+    {
+      "url": "https://discuss.huggingface.co/t/migrating-from-claude-opus-4-6-to-4-7-breaking-changes-token-cost-reality-and-rollout-strategy/175360",
+      "domain": "discuss.huggingface.co",
+      "type": "other",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "temperature=0 などで決定論的出力を得ていたコードはプロンプト側で一貫性を担保し直す必要",
+        "thinking display を summarized に明示しないと UX 上の沈黙が出る",
+        "Bedrock 経由は research preview の経路が混じるので serving path 単位で本番準備状況を確認"
+      ]
+    },
+    {
+      "url": "https://openrouter.ai/docs/guides/evaluate-and-optimize/model-migrations/claude-4-7",
+      "domain": "openrouter.ai",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "OpenRouter 経由では sampling 系・reasoning.effort・reasoning.max_tokens は無視される（adaptive を使用）",
+        "verbosity が output_config.effort に対応する唯一の効率レバーになる",
+        "xhigh は Opus 4.7 限定、旧モデルでは high に自動フォールバック"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Claude Opus 4.7 は 2026-04-16 に GA。model ID は claude-opus-4-7（Opus 4.6 の -v1 のような枝番なし）。価格は 4.6 と同一の $5 / $25 per Mtok。",
+      "evidence_urls": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://builder.aws.com/content/3Cl90CMMnqzCrkk6mXcmnGo1WTG/claude-opus-47-on-amazon-bedrock-apis-features-and-migration-guide"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "詰まる①: トークナイザが新しくなり、同じ入力テキストで 1.0–1.35x（実測では英語コードで 1.47x まで）トークンを消費する。価格は同じでも請求額・レート枠の消費が増える。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7",
+        "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
+        "https://www.mindstudio.ai/blog/claude-opus-4-7-review/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "詰まる②: extended thinking の thinking={type:'enabled', budget_tokens:N} は 400 エラーになる。adaptive thinking（thinking={type:'adaptive'}）と output_config.effort に書き換える。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/models/migration-guide",
+        "https://www.aicodex.to/articles/migrating-to-claude-4-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "詰まる③: temperature / top_p / top_k に non-default 値を渡すと 400 エラー。temperature=0 で決定論を担保していたコードはプロンプト側で書き直す必要がある。",
+      "evidence_urls": [
+        "https://www.aicodex.to/articles/migrating-to-claude-4-7",
+        "https://discuss.huggingface.co/t/migrating-from-claude-opus-4-6-to-4-7-breaking-changes-token-cost-reality-and-rollout-strategy/175360",
+        "https://builder.aws.com/content/3Cl90CMMnqzCrkk6mXcmnGo1WTG/claude-opus-47-on-amazon-bedrock-apis-features-and-migration-guide"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "詰まる④: 思考表示（thinking content）はデフォルトで omitted。UI に reasoning ストリームを出していた製品は無音の停止に見える。display: 'summarized' を明示しないと UX が壊れる。",
+      "evidence_urls": [
+        "https://www.aicodex.to/articles/migrating-to-claude-4-7",
+        "https://www.rabinarayanpatra.com/blogs/claude-opus-4-7-release-and-migration-guide",
+        "https://discuss.huggingface.co/t/migrating-from-claude-opus-4-6-to-4-7-breaking-changes-token-cost-reality-and-rollout-strategy/175360"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "詰まる⑤: assistant message prefills は 400 エラー。output_config.format か structured outputs に置き換える。effort-2025-11-24 等のベータヘッダも削除する（GA 化済み）。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/models/migration-guide"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "詰まる⑥: Claude Code のデフォルト effort が全プランで xhigh に引き上げ。xhigh × 新トークナイザ × 後半ターンの思考増幅でコストが乗算的に膨らむ。lint / 整形 / 短いタスクは /effort high or medium に下げる。",
+      "evidence_urls": [
+        "https://mydataschool.com/blog/opus-4-7-released/",
+        "https://www.productcompass.pm/p/claude-opus-4-7-guide"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "詰まる⑦: プロンプトキャッシュはモデル単位で分割されるため、4.6→4.7 への切替で全 cached prefix が無効化されコールドスタートになる。最初のセッションは特に高コスト。",
+      "evidence_urls": [
+        "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "周辺事実: Opus 4 base（claude-opus-4-20250514）は 2026-04-14 deprecated・2026-06-15 retire。推奨後継は claude-opus-4-7。Sonnet 4（claude-sonnet-4-20250514）も同日 retire。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "https://endoflife.date/claude"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "周辺事実: 4.7 は字義通りの指示追従が強まり、暗黙の一般化を行わない。曖昧なプロンプトをそのまま実行するため既存プロンプトの再チューニングが必要。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7",
+        "https://mydataschool.com/blog/opus-4-7-released/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "周辺事実: 多言語ワークロード（CJK / アラビア / ヒンディー）は新トークナイザで 20–35% トークン削減され、日本語中心のチームには逆に有利に働く。",
+      "evidence_urls": [
+        "https://www.mindstudio.ai/blog/claude-opus-4-7-review/"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "gaps": [
+    "Anthropic 公式の『Migrating to Claude Opus 4.7』ページの完全なチェックリスト（platform.claude.com 直読み）に当たれていない。Tavily 経由の引用のみのため、公式 RAW を直接 WebFetch で取り直すと裏取りが固くなる。",
+    "task budgets（public beta）の具体的な API 形式と上限値の一次ドキュメントを未取得。Anthropic 公式ドキュメントの該当ページを参照する必要がある。",
+    "プロンプトキャッシュ無効化の挙動は二次情報（claudecodecamp.com）のみ。Anthropic 公式の『prompt caching』ドキュメント側で『model 単位で分割』の記述を直接確認したい。",
+    "新トークナイザの倍率を日本語入力で実測したベンチマーク（一次データ）は未取得。Anthropic 公式の token counting ドキュメントか日本語コーパスでの計測値が望ましい。"
+  ]
+}

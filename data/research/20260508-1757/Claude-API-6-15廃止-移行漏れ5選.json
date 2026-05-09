@@ -1,0 +1,171 @@
+{
+  "run_id": "20260508-1757",
+  "title": "Claude API 6/15廃止 移行漏れ5選",
+  "slug": "Claude-API-6-15廃止-移行漏れ5選",
+  "collected_at": "2026-05-08T17:57:00+09:00",
+  "sources": [
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "domain": "platform.claude.com",
+      "type": "release_note",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "2026-04-14にAnthropicがClaude Sonnet 4 (claude-sonnet-4-20250514) と Claude Opus 4 (claude-opus-4-20250514) の廃止を告知",
+        "両モデルの Claude API 上でのリタイア日は 2026-06-15",
+        "推奨移行先: Sonnet 4 → claude-sonnet-4-6、Opus 4 → claude-opus-4-7",
+        "claude-opus-4-20250514 / claude-sonnet-4-20250514 は Deprecated 状態、6/15以降のAPI呼び出しはエラー"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/release-notes/overview",
+      "domain": "platform.claude.com",
+      "type": "release_note",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "2026-03-30の release note で 1M context beta (context-1m-2025-08-07) を Sonnet 4 / Sonnet 4.5 で 2026-04-30 にリタイアすると告知",
+        "4/30以降は同ヘッダーを付けても効果なし、200kトークンを超えるリクエストはエラー",
+        "1M contextを使い続けるには Sonnet 4.6 または Opus 4.6 に移行、これらは標準価格・ヘッダ不要でGA",
+        "2026-04-14: Sonnet 4 / Opus 4 廃止告知、2026-06-15 リタイア。それぞれ Sonnet 4.6 / Opus 4.7 への移行を推奨"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/migration-guide",
+      "domain": "platform.claude.com",
+      "type": "release_note",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Sonnet 4.5 → 4.6 で『Prefilling assistant messages』は400エラーになる破壊的変更（最後のassistantメッセージへのprefillが廃止）",
+        "代替は output_config.format によるStructured Outputs、システムプロンプトでのフォーマット指示、またはtoolsのenum",
+        "Sonnet/Opus 4.6 で extended thinking (thinking.type=enabled + budget_tokens) は依然動作するがdeprecated、adaptive thinking + effort パラメータへの移行を推奨",
+        "Opus 4.7 では budget_tokens 指定は400エラー、adaptive thinking のみが thinking-on モード",
+        "4.6世代以降は output_format ではなく output_config.format を使う"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7",
+      "domain": "platform.claude.com",
+      "type": "release_note",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Opus 4.7 では Messages API に4つの破壊的変更: budget_tokens 廃止、temperature/top_p/top_k の非デフォルト値で400、thinking content がデフォルト非表示、adaptive thinking がデフォルト無効",
+        "Opus 4.7 のトークナイザーは新世代で、同じテキストでも 4.6 比で最大1.35倍のトークン数になりうる",
+        "Opus 4.7 で thinking を表示したい場合は thinking={type:'adaptive', display:'summarized'} を明示指定",
+        "Opus 4.7 のper-token価格は 4.6 と同じ（入力 $5/MTok、出力 $25/MTok）"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices",
+      "domain": "platform.claude.com",
+      "type": "release_note",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Sonnet 4.6 のデフォルト effort は high で、Sonnet 4.5（effortパラメータ無し）から移行するとデフォルトのままだとレイテンシが上がる",
+        "推奨は『大半のアプリで medium』『高スループット/低レイテンシ用途は low』『medium/high で max_tokens は 64k 推奨』",
+        "4.6 世代はモデル自体の指示追従が改善しているので、旧モデル向けの『丁寧さ・ツール使用を促す』プロンプトはむしろ過剰反応の原因になり得る"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking",
+      "domain": "platform.claude.com",
+      "type": "release_note",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "adaptive thinking は Opus 4.7 / Opus 4.6 / Sonnet 4.6 / Mythos Preview で利用可能",
+        "Opus 4.7 では adaptive thinking のみがサポート、type:'enabled' + budget_tokens は受理されない",
+        "Sonnet 4.5 / Opus 4.5 等の旧モデルは adaptive thinking 非対応で type:'enabled' + budget_tokens を要求"
+      ]
+    },
+    {
+      "url": "https://raxxo.shop/blogs/lab/claude-opus-4-and-sonnet-4-retire-june-15",
+      "domain": "raxxo.shop",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Anthropic の廃止スケジュール一覧: 2026-04-14 Opus4/Sonnet4 廃止告知 / 2026-04-20 Haiku 3 リタイア / 2026-04-30 1M context beta 終了 / 2026-06-01 推奨移行期限 / 2026-06-15 Opus4/Sonnet4 リタイア",
+        "推奨対策の1つは『モデルIDをconfig/環境変数に集約しておくこと』で、次の deprecation サイクル（約6ヶ月ペース）に備える"
+      ]
+    },
+    {
+      "url": "https://findskill.ai/blog/migrate-claude-sonnet-4-5-to-4-6/",
+      "domain": "findskill.ai",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "4/30以降、claude-sonnet-4-5-20250929 や Sonnet 4 系で extra_headers={'anthropic-beta':'context-1m-2025-08-07'} を付けて200k超のプロンプトを送ると、`400 invalid_request_error: prompt is too long: <N> tokens > 200000 maximum` を返す",
+        "Sonnet 4.6 / Opus 4.6 では 1M context が標準・追加料金なし・ヘッダー不要"
+      ]
+    },
+    {
+      "url": "https://blog.laozhang.ai/en/posts/claude-opus-prefill-error-fix",
+      "domain": "blog.laozhang.ai",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Opus 4.6 / Sonnet 4.5以降で最後の assistant メッセージを prefill しているリクエストは `400 invalid_request_error: Prefilling assistant messages is not supported for this model.` を返す",
+        "代替案は (1) prefill を削除し system プロンプトでフォーマット指定 / (2) output_config.format に JSON schema を渡す Structured Outputs / (3) tools の enum で分類タスク化"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Claude API では 2026-06-15 に claude-sonnet-4-20250514 と claude-opus-4-20250514 が完全リタイア（API呼び出しはエラー）。推奨移行先は Sonnet 4.6 と Opus 4.7。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "https://platform.claude.com/docs/en/release-notes/overview"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "【移行漏れ①】1Mコンテキスト beta ヘッダー (context-1m-2025-08-07) は 2026-04-30 に Sonnet 4 / 4.5 で既に終了済み。同モデルで200k超を送ると 400 invalid_request_error。1M を維持したいなら Sonnet 4.6 / Opus 4.6 に移行（GA・追加料金なし・ヘッダー不要）。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://findskill.ai/blog/migrate-claude-sonnet-4-5-to-4-6/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "【移行漏れ②】最後の assistant ターンの prefill は Sonnet 4.6 / Opus 4.6 以降で 400 エラー。代替は output_config.format による Structured Outputs、system プロンプトでのフォーマット指示、または tools の enum。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/models/migration-guide",
+        "https://blog.laozhang.ai/en/posts/claude-opus-prefill-error-fix"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "【移行漏れ③】extended thinking の budget_tokens は 4.6 で deprecated、Opus 4.7 では完全廃止で 400 エラー。adaptive thinking (thinking={type:'adaptive'}) と effort パラメータに置き換える必要がある。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7",
+        "https://platform.claude.com/docs/en/build-with-claude/adaptive-thinking"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "【移行漏れ④】Opus 4.7 では temperature / top_p / top_k に非デフォルト値を指定すると 400 エラー。temperature=0 を決定論代わりに使っていたコードは特に要修正（プロンプトで誘導する方式に変更）。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "【移行漏れ⑤】output_format パラメータは output_config.format に移動。さらに Opus 4.7 ではトークナイザー刷新で同テキストでも最大1.35倍のトークン数になり得るため、max_tokens の余裕や課金見積りを再調整する必要がある。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/release-notes/overview",
+        "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "【補足】Sonnet 4.6 のデフォルト effort は high。Sonnet 4.5（effort 概念なし）から無設定で移行するとレイテンシが悪化する可能性があり、大半の用途は medium、低レイテンシ用途は low が推奨。",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "gaps": [
+    "AWS Bedrock / Google Cloud Vertex AI 上での同モデルのリタイア日（Anthropic 直販と一致するか）の一次情報が未確認。各クラウドのモデルカード/release notes で別途確認すべき。",
+    "Opus 4.7 トークナイザー変更の正確な係数（『最大1.35倍』の根拠となる Anthropic 公式ベンチマーク）の一次情報が未確認。Anthropic 公式の whats-new ページに数値が掲載されているか再確認が望ましい。",
+    "JP/Azure 等で claude-sonnet-4-6 / claude-opus-4-7 の提供地域・data residency (inference_geo) の対応状況が未確認。Sonnet 4 を US 限定推論で運用していた場合、移行先での扱いを Anthropic 公式ドキュメントで確認すべき。",
+    "GitHub Copilot 等の上位プロダクト経由で Sonnet 4 を利用していた場合のリタイア日（例：Copilot は 2026-05-06 に Sonnet 4 を deprecate 済み）と、自社ラッパーのフォールバック挙動の整合性は別途精査が必要。"
+  ]
+}

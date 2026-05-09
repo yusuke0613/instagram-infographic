@@ -1,0 +1,15 @@
+- [信頼ソース・得意領域マップ](sources_reliability.md) — 社内SE関連数値を取りに行く時の一次情報源と各社の強み
+- [生成AI導入率の調査機関別差異](genai_adoption_rate_variance.md) — JUAS/NRI/INTAGE/総務省で数値が違う理由と使い分け
+- [求人倍率の出典使い分け](job_ratio_sources.md) — レバテック10.4倍とdoda2.70倍を併記する時の語り分け
+- [社内SE記事の落とし穴](shanai_se_pitfalls.md) — 「楽・年収低い」ステレオタイプの先回り処理パターン
+- [転職サービス固有名詞での断罪は避ける](feedback_avoid_service_name_judgments.md) — 「使ってはいけないサイト」系で類型化する運用ルール
+- [SES→社内SE転職の主要数値2026年版](ses_to_shanai_se_numbers.md) — 年収/残業/倍率の即引きファクト集（doda/パーソル/IPA/レバテック）
+- [SIer vs メーカー社内SE 比較ファクト2026](sier_vs_maker_shanai_se_facts.md) — 年収/残業/出口の数値辞書、メーカー社内SE3類型の前提
+- [2026年5月時点の社内SE即引きファクト](trending_facts_2026_05.md) — 求人倍率/Copilot実数値/制度施行/ジョブ型移行の1次情報集
+- [1枚図解アングル7類型](idea_angle_patterns.md) — 保存/シェアされやすいアングル分類と数字埋め込みルール
+- [社内SE必須スキル2026年版ファクト](required_skills_2026_facts.md) — 求人票頻出ツール名・規模別差・学習TOP5・便利屋化防御質問
+- [社内SE中途面接の頻出質問×評価軸マップ](interview_question_patterns.md) — 頻出5問固定／NG3典型／回答テンプレ4要素／業界別重視軸
+- [社内SE求人票の地雷ワード辞書](job_description_mine_words.md) — 7大ワード×翻訳×逆質問、5チェックリスト、ひとり情シス24.5%
+- [残業時間 社内SE/SIer/SES 即引きファクト](overtime_facts_three_categories.md) — 3カテゴリ代表値・年取り戻し試算前提・公表値vs現場値乖離の扱い
+- [社内SE ロール別7階層年収マップ](shanai_se_salary_by_role_7tiers.md) — ヘルプデスク〜CIO直下の年収レンジ即引き＋ITSS/業界/規模補正
+- [書類選考通過率と職務経歴書評価軸](resume_pass_rate_facts.md) — マイナビ37.3%/doda22%/一般30-50%・SIer語→事業会社語翻訳辞書・ジョブ型JD化の影響

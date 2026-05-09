@@ -1,0 +1,152 @@
+{
+  "run_id": "20260507-2203",
+  "title": "AIエージェント採用が求める3スキル",
+  "slug": "AIエージェント採用が求める3スキル",
+  "collected_at": "2026-05-07T22:10:00+09:00",
+  "sources": [
+    {
+      "url": "https://claude.com/blog/claude-managed-agents",
+      "domain": "claude.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:websearch",
+      "key_facts": [
+        "2026年4月8日にClaude Managed Agentsがパブリックベータとして公開",
+        "サンドボックス実行・長時間セッション・スコープ付きパーミッション・ツール実行・エンドツーエンドトレーシングを提供",
+        "Notion、Asana、Sentryが本番前からベータ採用",
+        "料金は$0.08/ランタイム時間 + 通常のClaudeモデル使用料"
+      ]
+    },
+    {
+      "url": "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/",
+      "domain": "thenewstack.io",
+      "type": "other",
+      "retrieved_via": "mcp:websearch",
+      "key_facts": [
+        "AnthropicはManaged Agentsでインフラ・サンドボックス・パーミッション管理をフルマネージドで提供",
+        "エンジニアはタスク・ツール・ガードレールの定義に集中できる設計"
+      ]
+    },
+    {
+      "url": "https://www.langchain.com/state-of-agent-engineering",
+      "domain": "langchain.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:websearch",
+      "key_facts": [
+        "LangChain + LangGraphのPyPIダウンロード数は2026年時点で4,700万超",
+        "技術面接の約75%でRAG・エージェント・LLM評価に関する問題が出題",
+        "本番スケールでのエージェントオーケストレーション経験者はバニラRAGエンジニアより高い評価"
+      ]
+    },
+    {
+      "url": "https://365datascience.com/career-advice/career-guides/ai-engineer-job-outlook-2025/",
+      "domain": "365datascience.com",
+      "type": "other",
+      "retrieved_via": "mcp:websearch",
+      "key_facts": [
+        "AIエージェントエンジニアの求人タイトルはLinkedIn上で前年比340%増（2026年初頭）",
+        "給与レンジ：正社員$120K〜$250K以上、契約$200〜$500/時",
+        "AI+ソフトウェア+DevOpsのトリリンガルスキルで従来職種比20〜40%のプレミアム"
+      ]
+    },
+    {
+      "url": "https://uravation.com/media/mcp-complete-guide-2026/",
+      "domain": "uravation.com",
+      "type": "other",
+      "retrieved_via": "mcp:websearch",
+      "key_facts": [
+        "MCPはAnthropicが2024年11月に公開した統一プロトコル",
+        "2026年5月時点で公開MCPサーバーは10,000以上に達する",
+        "Claude・ChatGPT・Gemini・Cursor・VS Codeが対応し事実上の業界標準"
+      ]
+    },
+    {
+      "url": "https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/",
+      "domain": "brainpad.co.jp",
+      "type": "other",
+      "retrieved_via": "mcp:websearch",
+      "key_facts": [
+        "主要AIエージェントフレームワーク：LangGraph、CrewAI、AutoGen、Mastra、OpenAI Agents SDK",
+        "複雑フロー制御にはLangGraph、マルチエージェント速試にはCrewAI、TypeScriptチームにはMastraが推奨",
+        "歓迎スキル：ベクトルDB（Pinecone/Weaviate/Chroma）、AWS/GCP/Azure、Docker/Kubernetes、LLMOps"
+      ]
+    },
+    {
+      "url": "https://zenn.dev/headwaters/articles/a83550bb6c0f85",
+      "domain": "zenn.dev",
+      "type": "other",
+      "retrieved_via": "mcp:websearch",
+      "key_facts": [
+        "2026年AIエージェント時代に必須の3スキルとして「ノーコード開発」「プロンプトエンジニアリング」「LLMオーケストレーション設計」が言及",
+        "本番環境デプロイ・運用経験が市場価値を大きく左右する"
+      ]
+    },
+    {
+      "url": "https://qiita.com/emi_ndk/items/4f70389a0fac717df6a9",
+      "domain": "qiita.com",
+      "type": "other",
+      "retrieved_via": "mcp:websearch",
+      "key_facts": [
+        "MCP（縦：ツール連携）とA2A（横：エージェント協調）を組み合わせたマルチエージェントオーケストレーションが2026年標準構成",
+        "OpenTelemetry + クラウド監視を設定してエージェントの動作・コスト・エラーを可視化してから本番投入が推奨"
+      ]
+    },
+    {
+      "url": "https://renue.co.jp/posts/generative-ai-engineer-career-startup-selection-criteria-2026",
+      "domain": "renue.co.jp",
+      "type": "other",
+      "retrieved_via": "mcp:websearch",
+      "key_facts": [
+        "生成AI・LLM開発とAIエージェント開発スキルを持つエンジニアが2026年最高年収",
+        "実務経験3年以上で年収1,000万円超のオファーも現実的",
+        "LLM/RAG/AIエージェントを実案件で使えるか、本番デプロイ・運用経験が市場価値を決定"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "claim": "スキル①：LLMオーケストレーション設計力（LangGraph / CrewAI / MCP）― AIエンジニア求人の8割超でLangChainが歓迎スキルに挙がり、LangGraph+LangGraphのダウンロードは4,700万超",
+      "evidence_urls": [
+        "https://www.langchain.com/state-of-agent-engineering",
+        "https://www.brainpad.co.jp/doors/contents/best-ai-agent-frameworks-comparison/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "スキル②：本番運用・LLMOps（Docker/K8s・OpenTelemetry・クラウド）― 求人でのAIエージェントエンジニア需要は前年比340%増、本番スケール経験者はRAGのみの候補者より評価が高い",
+      "evidence_urls": [
+        "https://365datascience.com/career-advice/career-guides/ai-engineer-job-outlook-2025/",
+        "https://www.langchain.com/state-of-agent-engineering"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "スキル③：MCP/ツール統合設計力（外部システム・API連携）― MCPはClaude・ChatGPT・Gemini等が採用する業界標準プロトコルに成長し、公開MCPサーバーは10,000超（2026年5月）",
+      "evidence_urls": [
+        "https://uravation.com/media/mcp-complete-guide-2026/",
+        "https://qiita.com/emi_ndk/items/4f70389a0fac717df6a9"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Claude Managed Agentsのパブリックベータ（2026年4月8日）がバックエンド・AIエンジニアの採用需要を加速。サンドボックス・長時間セッション・スコープ付きパーミッションを提供",
+      "evidence_urls": [
+        "https://claude.com/blog/claude-managed-agents",
+        "https://thenewstack.io/with-claude-managed-agents-anthropic-wants-to-run-your-ai-agents-for-you/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "AIエージェントエンジニアの報酬：正社員年収$120K〜$250K以上（米国）、日本では実務3年以上で年収1,000万円超のオファーも",
+      "evidence_urls": [
+        "https://365datascience.com/career-advice/career-guides/ai-engineer-job-outlook-2025/",
+        "https://renue.co.jp/posts/generative-ai-engineer-career-startup-selection-criteria-2026"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "gaps": [
+    "日本の求人票における『AIエージェント』必須スキル記載割合の一次調査データ（doda/Geekly等の最新求人分析）が未取得",
+    "Claude Managed Agents採用企業（Notion/Asana/Sentry以外）の具体的なエンジニア採用要件の詳細",
+    "国内IT企業のAIエージェント開発職の具体的な求人件数・平均年収データ（レバテック/doda公式レポート等で要確認）"
+  ]
+}

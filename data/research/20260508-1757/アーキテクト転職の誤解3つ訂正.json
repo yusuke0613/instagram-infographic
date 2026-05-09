@@ -1,0 +1,210 @@
+{
+  "run_id": "20260508-1757",
+  "title": "アーキテクト転職の誤解3つ訂正",
+  "slug": "アーキテクト転職の誤解3つ訂正",
+  "collected_at": "2026-05-08T17:58:00+09:00",
+  "sources": [
+    {
+      "url": "https://xn--pckua2a7gp15o89zb.com/IT%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88%E3%81%AE%E5%B9%B4%E5%8F%8E%E3%83%BB%E6%99%82%E7%B5%A6",
+      "domain": "求人ボックス（kakaku.com）",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "ITアーキテクトの平均年収は約701万円",
+        "給与幅は380〜1,196万円と広く、勤務先・経験・スキルで差が大きい",
+        "月給換算で約58万円が相場",
+        "地域別では近畿が最も高く、大阪府は722万円",
+        "『未経験』条件では全体比-25%（つまり実務経験前提の職種）"
+      ]
+    },
+    {
+      "url": "https://tech-go.jp/it-engineer/management/it-architect/salary",
+      "domain": "tech-go.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "30代後半〜40代のアーキテクトは年収700〜1,100万円レンジ",
+        "30代で800万円が分岐点",
+        "エンタープライズアーキテクト平均850万円〜、マネージャー以上で1,200万円超",
+        "クラウドアーキテクト平均800万円、AWS認定 Solutions Architect Professional 等の資格＋実務で800〜1,000万円",
+        "AIアーキテクトは2026年に急上昇中で平均800万円〜",
+        "年収1000万超の条件は『技術力×ビジネス理解×ステークホルダー調整力』の3軸",
+        "100人月以上の大規模案件リード経験が高年収の必須条件のひとつ"
+      ]
+    },
+    {
+      "url": "https://tech-go.jp/it-engineer/management/it-architect",
+      "domain": "tech-go.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "アーキテクト職を目指す場合、IT業界で最低3〜5年の実務経験が現実的な準備期間",
+        "失敗パターン1: 技術スキルのみに特化しビジネス理解が不足（『技術スキルは前提条件であって差別化要因にはなりにくい』）",
+        "失敗パターン2: 上流工程の経験なしでいきなりアーキテクト職に応募（『要件定義・基本設計への関与経験がなければ書類選考で弾かれる』）",
+        "求人票の条件例: 『基本設計・要件定義の経験3年以上』『技術選定の主導経験』『複数ステークホルダーとの折衝経験』",
+        "実装経験のみの場合、まず現職で上流工程への関与機会を増やすか、1ステップ挟むのが現実的",
+        "IPA『IT人材白書2020』で、育成したいIT人材としてアーキテクトを挙げた企業は40%以上、1,001名以上の大企業では62.5%"
+      ]
+    },
+    {
+      "url": "https://career.levtech.jp/guide/knowhow/article/437/",
+      "domain": "levtech.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "IPA『ITスキル標準（ITSS）』によるITアーキテクトの担当業務: ビジネス＆IT課題分析→情報システム化要件への再構成、IT全体品質を保ったアーキテクチャ設計、後続開発・導入の実現性確認、技術リスクの事前評価",
+        "戦略・要件定義（ITコンサル領域）と設計・開発（PM領域）を結ぶ『橋渡し』役を期待される",
+        "クラウド化進展により運用フェーズまで担うケースが増加",
+        "システムアーキテクト試験はIPA『情報処理技術者試験』の高度区分（記述式・論述式含む）"
+      ]
+    },
+    {
+      "url": "https://www.ipa.go.jp/jinzai/skill-standard/plus-it-ui/itss/ps6vr70000004x60-att/000024929.pdf",
+      "domain": "ipa.go.jp",
+      "type": "official_stat",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "IPA『ITスキル標準V3』ITアーキテクトの達成度指標は7段階（レベル3〜7）",
+        "レベル3: ピーク時要員10人未満のプロジェクトでソリューション設計責任者",
+        "レベル4: 同上＋アーキテクチャ評価まで",
+        "レベル5: ピーク時要員10〜50人未満",
+        "レベル6: 50〜500人未満で複数アーキテクト参画",
+        "レベル7: 500人以上で複数アーキテクト参画、国際的に通用するアーキテクチャ必須",
+        "職種共通スキル: 要件分析・アーキテクチャ設計指針・IT設計・実現可能性評価・代替案分析・プラットフォーム評価"
+      ]
+    },
+    {
+      "url": "https://tenshoku.mynavi.jp/engineer/list/o16107/",
+      "domain": "mynavi.jp",
+      "type": "other",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "マイナビITアーキテクト求人で1,333件以上が掲載（2026年4-5月時点）",
+        "NTTデータの求人例: 必要経験『ITアーキテクト、ネットワークスペシャリスト等インフラ領域で3年以上』、初年度年収550万〜1,000万円",
+        "Webアプリアーキテクト求人例: 必要『C#/Java Web開発、Webアーキ策定・実装、Azure等で計3年以上』、初年度年収562万〜1,186万円",
+        "求人提示年収は『初年度』で1,000万円超は上限値（モデル年収）であり、エントリー時点で必ず到達する金額ではない"
+      ]
+    },
+    {
+      "url": "https://relance.jp/blog/cloudengineer-annual-1000/",
+      "domain": "relance.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "クラウド系で年収1000万を狙う層は、AWS/Azure/GCPの設計に加え、オンプレミス設計・ネットワーク設計の知識も併せ持つことが多い",
+        "オンプレミスからクラウドへの移行案件は両方の知識が必要で、両方を持つ人材は希少のため高単価"
+      ]
+    },
+    {
+      "url": "https://it-career-lab.com/%E5%B9%B4%E5%8F%8E%E3%82%A2%E3%83%83%E3%83%97/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%9E%E3%83%83%E3%83%97/",
+      "domain": "it-career-lab.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "年収1000万円を達成しているエンジニアの約67%が『転職』をきっかけに達成（同一企業の昇給だけでは限界）",
+        "クラウドアーキテクト/SREの1000万円達成率は24%、テックリード/EMは38%",
+        "求人ベース頻出スキル1位はクラウド設計（AWS/GCP/Azure）で +200〜400万円効果",
+        "5年目で『リード・アーキテクト 800〜1,000万』、7年+で『テックリード/外資転職 1,000万〜』が一般的なロードマップ"
+      ]
+    },
+    {
+      "url": "https://freelance.levtech.jp/guide/detail/1233/",
+      "domain": "freelance.levtech.jp",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "フリーランスITアーキテクトの平均年収は約948万円（2025年11月時点）",
+        "ITアーキテクトに求められるスキル: アーキテクチャ設計、設計技法（UML・DFD・ER図等）、マネジメント、関連技術動向の把握",
+        "正社員として一定経験を積んだ後、フリーランス化で年収レンジを上げるルートが存在"
+      ]
+    },
+    {
+      "url": "https://qiita.com/ryucciarati/items/a54fe65fe691bd773907",
+      "domain": "qiita.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "アーキテクトに期待される8能力: 技術面5（決定/分析/トレンド/遵守/多様な技術理解）+ ビジネス・ヒューマン3（ドメイン知識/対人スキル/組織政治）",
+        "アーキテクトの仕事は技術選定そのものではなく『導く（guide）』決定であり、『指定する（specify）』ではない",
+        "実装に張り付くと全体俯瞰できず、離れすぎると『アームチェアアーキテクト』になりトレンド/詳細に鈍感になる"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "claim": "誤解1: 『アーキテクト＝技術力さえあれば務まる』は誤り。求められるのは技術＋ビジネス理解＋対人/折衝（3軸）。技術スキルは前提条件であり差別化要因にはならない。",
+      "evidence_urls": [
+        "https://tech-go.jp/it-engineer/management/it-architect",
+        "https://tech-go.jp/it-engineer/management/it-architect/salary",
+        "https://qiita.com/ryucciarati/items/a54fe65fe691bd773907",
+        "https://career.levtech.jp/guide/knowhow/article/437/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "誤解2: 『実装経験N年あれば応募できる』は誤り。求人の必須条件には『要件定義・基本設計の経験3年以上』『技術選定の主導経験』『複数ステークホルダーとの折衝経験』が並び、実装経験のみだと書類段階で落ちやすい。",
+      "evidence_urls": [
+        "https://tech-go.jp/it-engineer/management/it-architect",
+        "https://tenshoku.mynavi.jp/engineer/list/o16107/",
+        "https://www.ipa.go.jp/jinzai/skill-standard/plus-it-ui/itss/ps6vr70000004x60-att/000024929.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "誤解3: 『アーキテクト転職＝即年収1000万』は誤り。求人ボックス調査の平均は約701万円（給与幅380〜1,196万円）で、1000万円到達には30代後半〜40代＋クラウド/AI等の専門領域＋大規模案件リード経験が前提となる。",
+      "evidence_urls": [
+        "https://xn--pckua2a7gp15o89zb.com/IT%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88%E3%81%AE%E5%B9%B4%E5%8F%8E%E3%83%BB%E6%99%82%E7%B5%A6",
+        "https://tech-go.jp/it-engineer/management/it-architect/salary",
+        "https://it-career-lab.com/%E5%B9%B4%E5%8F%8E%E3%82%A2%E3%83%83%E3%83%97/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%9E%E3%83%83%E3%83%97/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "ITアーキテクトの平均年収は約701万円（求人ボックス、2026年時点）。日本の平均年収より高水準だが、給与幅は380〜1,196万円と広い。",
+      "evidence_urls": [
+        "https://xn--pckua2a7gp15o89zb.com/IT%E3%82%A2%E3%83%BC%E3%82%AD%E3%83%86%E3%82%AF%E3%83%88%E3%81%AE%E5%B9%B4%E5%8F%8E%E3%83%BB%E6%99%82%E7%B5%A6"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "専門領域別ではエンタープライズ約850万円、クラウド約800万円、AI約800万円〜（2026年急上昇中）、セキュリティ約780万円、アプリ約720万円。1000万円超は領域＋資格＋大規模案件リード経験で到達。",
+      "evidence_urls": [
+        "https://tech-go.jp/it-engineer/management/it-architect/salary"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "IPA ITSSではアーキテクトの達成度はレベル3〜7の5段階で、上位レベルほど大規模・複数アーキ参画プロジェクトでの責任者経験が要求される。レベル7は500人規模＋国際的アーキテクチャ要件が必須。",
+      "evidence_urls": [
+        "https://www.ipa.go.jp/jinzai/skill-standard/plus-it-ui/itss/ps6vr70000004x60-att/000024929.pdf"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "年収1000万到達者の約67%は『転職』が起点（同一企業の昇給では限界がある）。クラウドアーキテクト/SREでの1000万円達成率は24%。",
+      "evidence_urls": [
+        "https://it-career-lab.com/%E5%B9%B4%E5%8F%8E%E3%82%A2%E3%83%83%E3%83%97/%E3%83%AD%E3%83%BC%E3%83%89%E3%83%9E%E3%83%83%E3%83%97/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "求人提示年収（例: NTTデータ 550万〜1,000万、LIFULL系 562万〜1,186万）の上限はモデル/最大値であり、入社時に必ず到達する金額ではない。下限スタートのケースも多い。",
+      "evidence_urls": [
+        "https://tenshoku.mynavi.jp/engineer/list/o16107/"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "アーキテクトには『guide（導く）』姿勢が求められ、『specify（指定する）』だけでは機能しない。実装から離れすぎると『アームチェアアーキテクト』化する。",
+      "evidence_urls": [
+        "https://qiita.com/ryucciarati/items/a54fe65fe691bd773907"
+      ],
+      "confidence": "medium"
+    }
+  ],
+  "gaps": [
+    "厚労省・経産省・IPAなど一次統計でのアーキテクト職限定の最新（2025-2026）平均年収/採用倍率データはピンポイントで取得できず、求人媒体（求人ボックス・テックゴー等）の集計値に依拠している。一次情報としては『厚労省 IT・デジタル人材の労働市場研究調査』『IPA IT人材白書』を直接当たって職種別レンジを確認したい。",
+    "『年収1000万到達ルートの誤読』を裏付ける具体的な数値（例: アーキテクト求人に占める1000万超提示の割合、達成までの平均年数）は媒体個別の調査が必要。dodaやマイナビ転職の職種別年収レポートの一次PDFが望ましい。",
+    "ITSS/ITSS+の最新版（V4以降）でのアーキテクト定義変更や、『DXアーキテクト』『AIアーキテクト』の公式定義はIPA公式の最新資料を確認できておらず、PDFのV3 (2011-2012) を引用している。最新版の確認が望ましい。"
+  ]
+}

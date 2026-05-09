@@ -1,0 +1,17 @@
+{
+  "env": {
+    "CLAUDE_CODE_EXPERIMENTAL_AGENT_TEAMS": "1"
+  },
+  "permissions": {
+    "allow": [
+      "mcp__tavily__tavily_search",
+      "WebFetch",
+      "mcp__apify__fetch-actor-details",
+      "mcp__youtube-transcript__get_transcript",
+      "mcp__apify__get-actor-output",
+      "WebSearch",
+      "mcp__youtube__searchVideos",
+      "mcp__apify__search-actors"
+    ]
+  }
+}

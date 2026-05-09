@@ -1,0 +1,180 @@
+{
+  "run_id": "20260508-1757",
+  "title": "Opus 4.7移行で壊れるコード4類型",
+  "slug": "Opus-4-7移行で壊れるコード4類型",
+  "collected_at": "2026-05-08T17:57:00+09:00",
+  "sources": [
+    {
+      "url": "https://www.anthropic.com/news/claude-opus-4-7",
+      "domain": "anthropic.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Claude Opus 4.7はOpus 4.6への直接の後継モデルとして公式アナウンス",
+        "新しいトークナイザーを採用し、同一入力でも1.0〜1.35倍のトークン数になり得る",
+        "高いeffortレベル（特にエージェント的な後半ターン）で出力トークン量が増える",
+        "命令追従が大幅に改善され、以前のプロンプトを字義通り解釈するため再チューニングが必要"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7",
+      "domain": "platform.claude.com",
+      "type": "release_note",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "新トークナイザーで /v1/messages/count_tokens の戻り値が4.6と異なる",
+        "thinking content はデフォルトで応答から省略される（silent change、エラーは出ない）",
+        "thinking フィールドを表示するには display: 'summarized' を明示指定する必要がある",
+        "task_budget と effort で消費トークンを制御できるが、知能とのトレードオフがある"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/models/migration-guide",
+      "domain": "platform.claude.com",
+      "type": "release_note",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "移行チェックリスト: モデル名を claude-opus-4-6 → claude-opus-4-7 に更新",
+        "temperature, top_p, top_k を payload から削除（非デフォルト値で400エラー）",
+        "thinking: {type: 'enabled', budget_tokens: N} を thinking: {type: 'adaptive'} + effortパラメータに置き換え",
+        "assistant message のプリフィル（prefill）を削除する必要がある",
+        "UI でthinking content を表示する場合は明示的に summarization を opt-in する",
+        "新トークナイザーを踏まえて max_tokens とクライアント側のトークン計測を再チューニング"
+      ]
+    },
+    {
+      "url": "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+      "domain": "platform.claude.com",
+      "type": "official_stat",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "2026-04-14アナウンス: Claude Sonnet 4 / Opus 4 (オリジナル4.0系) は2026-06-15に retirement",
+        "claude-opus-4-20250514 の推奨後継は claude-opus-4-7",
+        "claude-3-opus-20240229 の retirement 日は2026-01-05、推奨後継は claude-opus-4-7"
+      ]
+    },
+    {
+      "url": "https://www.rabinarayanpatra.com/blogs/claude-opus-4-7-release-and-migration-guide",
+      "domain": "rabinarayanpatra.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Opus 4.7のリリース日は2026年4月16日（Claude製品/API/Bedrock/Vertex AI/Microsoft Foundryで提供）",
+        "API model ID は claude-opus-4-7",
+        "価格は入力$5/Mtok・出力$25/Mtok（4.6と同額）だが、新トークナイザーで実質コストは最大35%増",
+        "Messages APIの破壊的変更は4つ: extended thinking budgets廃止、サンプリングパラメータ廃止、thinking出力デフォルトoff、新トークナイザー"
+      ]
+    },
+    {
+      "url": "https://builder.aws.com/content/3Cl90CMMnqzCrkk6mXcmnGo1WTG/claude-opus-47-on-amazon-bedrock-apis-features-and-migration-guide",
+      "domain": "builder.aws.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "Bedrock の model ID 形式が変更: claude-opus-4-7（-v1 サフィックスなし）",
+        "Opus 4.6 では claude-opus-4-6-v1 だったため移植時に注意",
+        "effort パラメータの配置が変更: thinking dictの内側ではなく output_config の中に置く",
+        "thinking はデフォルトで空の thinking フィールドを返し、signature フィールドで推論実施を確認できる"
+      ]
+    },
+    {
+      "url": "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you",
+      "domain": "claudecodecamp.com",
+      "type": "vendor_blog",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "独立計測: 英語と code の自然なコンテンツで1.20〜1.47倍のトークン増",
+        "コードはユニーク散文より重く出る (1.29〜1.39倍 vs 1.20倍)",
+        "CJK/絵文字/記号は1.005〜1.07倍に留まり、変更幅は限定的",
+        "プロンプトキャッシュはモデル別パーティションのため4.6→4.7切替時に全プレフィクス無効化",
+        "Maxプラン: 5時間ウィンドウは英語中心ワークロードでより速く尽きる"
+      ]
+    },
+    {
+      "url": "https://www.linkedin.com/posts/adam-brakhane_opus-47-will-break-your-app-its-more-%F0%9D%97%B1%F0%9D%97%B6%F0%9D%97%B3%F0%9D%97%B3%F0%9D%97%B2%F0%9D%97%BF%F0%9D%97%B2%F0%9D%97%BB%F0%9D%98%81-activity-7452837683317391360-Y-k6",
+      "domain": "linkedin.com",
+      "type": "other",
+      "retrieved_via": "mcp:tavily",
+      "key_facts": [
+        "現場での実感としてサブエージェントの並列化がデフォルトで起きにくくなり、明示指示が必要",
+        "non-coding タスクではadaptive thinkingが低effortを選びやすく、出力が薄くなる傾向",
+        "命令字義解釈により、'format nicely' のような曖昧プロンプトの装飾が消える"
+      ]
+    }
+  ],
+  "facts": [
+    {
+      "claim": "Claude Opus 4.7は2026年4月16日にリリースされ、API model ID は claude-opus-4-7（pricingは$5/$25 per MTokで4.6と同額）",
+      "evidence_urls": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://www.rabinarayanpatra.com/blogs/claude-opus-4-7-release-and-migration-guide"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "【類型1: サンプリングパラメータ】temperature / top_p / top_k に非デフォルト値を渡すと400エラー。temperature=0で擬似決定論を作っていたコードが壊れる",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/models/migration-guide",
+        "https://discuss.huggingface.co/t/migrating-from-claude-opus-4-6-to-4-7-breaking-changes-token-cost-reality-and-rollout-strategy/175360",
+        "https://caylent.com/blog/claude-opus-4-7-deep-dive-capabilities-migration-and-the-new-economics-of-long-running-agents"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "【類型2: extended thinking 設定】thinking={'type':'enabled', 'budget_tokens': N} は400エラー。{'type':'adaptive'} と output_config.effort へ移行が必須。effort は thinking dictの内側ではなく output_config 直下に置く",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/models/migration-guide",
+        "https://www.rabinarayanpatra.com/blogs/claude-opus-4-7-release-and-migration-guide",
+        "https://builder.aws.com/content/3Cl90CMMnqzCrkk6mXcmnGo1WTG/claude-opus-47-on-amazon-bedrock-apis-features-and-migration-guide"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "【類型3: thinking 表示】thinking content はデフォルトで省略（silent change・エラー無し）。UIに推論を流していたコードは長い無音の後に最終出力が出るUXになる。display: 'summarized' を明示しないと戻らない",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7",
+        "https://www.rabinarayanpatra.com/blogs/claude-opus-4-7-release-and-migration-guide"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "【類型4: トークン会計とプリフィル】新トークナイザーで同一入力が1.0〜1.35倍のトークン数になり、count_tokens の戻り値も変わる。max_tokens やクライアント側の token 推定、コスト試算、プロンプトキャッシュ前提が崩れる。assistant message のプリフィルも削除する必要がある",
+      "evidence_urls": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://platform.claude.com/docs/en/about-claude/models/whats-new-claude-4-7",
+        "https://platform.claude.com/docs/en/about-claude/models/migration-guide",
+        "https://www.claudecodecamp.com/p/i-measured-claude-4-7-s-new-tokenizer-here-s-what-it-costs-you"
+      ],
+      "confidence": "high"
+    },
+    {
+      "claim": "Bedrock では model ID 形式が claude-opus-4-7（-v1 サフィックス無し）に変更。4.6時点の claude-opus-4-6-v1 を残したコードはエラーになる",
+      "evidence_urls": [
+        "https://builder.aws.com/content/3Cl90CMMnqzCrkk6mXcmnGo1WTG/claude-opus-47-on-amazon-bedrock-apis-features-and-migration-guide"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "Opus 4.6 は2026-06-15 に retirement 予定（2026-04-14アナウンス）。推奨後継は claude-opus-4-7。ただしretirement対象として正式公表されたのは Opus 4 (claude-opus-4-20250514) と Sonnet 4 で、Opus 4.6 自体の公式 retirement 日付は出典により記述差がある",
+      "evidence_urls": [
+        "https://platform.claude.com/docs/en/about-claude/model-deprecations",
+        "https://www.mindstudio.ai/blog/how-to-migrate-claude-opus-4-6-to-4-7/"
+      ],
+      "confidence": "medium"
+    },
+    {
+      "claim": "命令追従の厳格化により、Opus 4.6が補完していた曖昧プロンプト（'format nicely'等）が4.7では装飾なしで字義どおりの出力になる。プロンプト/ハーネスの再チューニングが必要",
+      "evidence_urls": [
+        "https://www.anthropic.com/news/claude-opus-4-7",
+        "https://caylent.com/blog/claude-opus-4-7-deep-dive-capabilities-migration-and-the-new-economics-of-long-running-agents"
+      ],
+      "confidence": "high"
+    }
+  ],
+  "gaps": [
+    "Anthropic公式『Migrating to Claude Opus 4.7』ページ本文の完全な原文（migration checklistの厳密な順序）を tavily_extract 等で一次取得して引用するとより堅い",
+    "Opus 4.6 自体の retirement 日付（2026-06-15 と記述するブログ vs 公式 deprecation 表に未掲載）について、Anthropic の正式アナウンスURLを当てて確認すべき",
+    "新トークナイザーが日本語/CJKでどの程度トークン削減になるかの公式数字（mindstudio記事は20–35%削減と記載するが一次裏取りが欲しい）",
+    "output_config の正式スキーマ（format / effort / 他フィールド）と、output_format との互換期間の終了タイミングの一次情報"
+  ]
+}
